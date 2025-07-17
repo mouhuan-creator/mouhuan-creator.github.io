@@ -36,5 +36,4 @@
 4. 设置好后每次登录Github都需要使用两步验证，记得保管好你的Authenticator备份文件哟！
 ***
 本文最后编辑于2024/08/30，家中，书桌旁，窗前。
-
 <!-- ##{"script":"<script src='https://blog.meekdai.com/Gmeek/plugins/articletoc.js'></script>"}## -->
