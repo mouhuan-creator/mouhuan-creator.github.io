@@ -6,7 +6,8 @@
     "startSite":"07/19/2024",
     "onePageListNum":10,
     "showPostSource":0,
-    "needComment":0,
+    "i18n":"CN",
+    "UTC":8,
     "themeMode":"manual",
     "bottomText":"转载请保留原文链接及署名。",
     "GMEEK_VERSION":"last"
