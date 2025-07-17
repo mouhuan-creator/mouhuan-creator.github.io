@@ -1,1 +1,1 @@
-{"P1": {"labels": ["good first blog", "site"], "postTitle": "about", "postUrl": "post/about.html", "createdDate": "2025-07-17", "dateLabelColor": "#0969da"}, "labelColorDict": {"good first blog": "#7057ff", "invalid": "#e4e669", "site": "#0d7d8c"}}
+{"P1": {"labels": ["site"], "postTitle": "about", "postUrl": "post/about.html", "createdDate": "2025-07-17", "dateLabelColor": "#0969da"}, "labelColorDict": {"good first blog": "#7057ff", "invalid": "#e4e669", "site": "#0d7d8c"}}
