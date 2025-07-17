@@ -1,6 +1,19 @@
 {
-    "title":"Blog Title",
-    "subTitle":"Blog description",
-    "avatarUrl":"https://github.githubassets.com/favicons/favicon.svg",
-    "GMEEK_VERSION":"last"
+    "title":"谋欢",
+    "subTitle":"谋求片刻欢愉。",
+    "avatarUrl":"https://mouhuan-creator.github.io/i.jpg",
+    "urlMode":"issue",
+    "singlePage":["about"],
+    "onePageListNum":9,
+    "themeMode":"manual",
+    "dayTheme":"light",
+    "nightTheme":"dark",
+    "showPostSource":0,
+    "needComment":0,
+    "UTC":8,
+    "i18n":"CN",
+    "script":"<script src='https://blog.meekdai.com/Gmeek/plugins/lightbox.js'></script>",
+    "bottomText":"转载请保留原文链接及署名。",
+    "startSite":"07/19/2024",
+    "GMEEK_VERSION":"last"
 }
