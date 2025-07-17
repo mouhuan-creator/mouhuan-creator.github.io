@@ -8,7 +8,7 @@
     "themeMode":"manual",
     "dayTheme":"light",
     "nightTheme":"dark",
-    "showPostSource":0,
+    "showPostSource":1,
     "needComment":0,
     "UTC":8,
     "i18n":"CN",
