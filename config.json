@@ -4,6 +4,7 @@
     "homeUrl":"https://mouhuan-creator.github.io",
     "avatarUrl":"https://mouhuan-creator.github.io/i.jpg",
     "startSite":"07/19/2024",
+    "singlePage":["about"],
     "onePageListNum":10,
     "showPostSource":0,
     "i18n":"CN",
