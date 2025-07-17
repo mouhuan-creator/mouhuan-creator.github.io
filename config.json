@@ -12,6 +12,7 @@
     "i18n":"CN",
     "UTC":8,
     "themeMode":"manual",
+    "script":"<script src='https://blog.meekdai.com/Gmeek/plugins/lightbox.js'></script>",
     "bottomText":"转载请保留原文链接及署名。",
     "GMEEK_VERSION":"last"
 }
