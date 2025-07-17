@@ -7,6 +7,7 @@
     "singlePage":["about"],
     "onePageListNum":10,
     "urlMode":"issue",
+    "needComment":0,
     "showPostSource":0,
     "i18n":"CN",
     "UTC":8,
