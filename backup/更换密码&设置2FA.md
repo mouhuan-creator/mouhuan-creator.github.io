@@ -34,6 +34,6 @@
 1. 选择你喜欢的身份验证器。常见的身份验证器有[Google Authenticator](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2)、[2FAS](https://2fas.com/)、[Authy](https://authy.com/)、[Aegis](https://getaegis.app/)等等，不过我个人还是习惯用Aegis，也没什么特别的原因，仅仅是因为它比较美观。可惜Aegis只有安卓版本:)
 3. 以开启Github的2FA为例，用Aegis作为Authenticator。按照`Settings`>>`Access`>>`Password and authentication`>>`Enable two-factor authentication`的顺序，然后打开Aegis，点击右下角的+号，扫描Github提供的二维码或者手动输入Key，点击Save，最后输入Aegis提供的六位验证码即可完成2FA设置。
 4. 设置好后每次登录Github都需要使用两步验证，记得保管好你的Authenticator备份文件哟！
-***
+---
 本文最后编辑于2024/08/30，家中，书桌旁，窗前。
-<!-- ##{"script":"<script src='https://blog.meekdai.com/Gmeek/plugins/articletoc.js'></script>"}## -->
+<!-- ##{"timestamp":1725018918}## -->
