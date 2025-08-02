@@ -3,14 +3,14 @@
 
 最近想着给自己的博客做个专属logo，可我浑身上下没有一点艺术细胞，一提笔就像鬼画符，只好把这件事托付AI了。
 
-正好前几天在[VingLog](https://vindlog.com/MyVoice/322.html#comments)上看到有博主推荐[Kimi](https://www.kimi.com/)的图片创作功能[^1]，便试了一试。
+正好前几天在[VingLog](https://vindlog.com/MyVoice/322.html#comments)这个博客的评论区看到博主推荐[Kimi](https://www.kimi.com/)的图片创作功能[^1]，又再度燃起了热情~~三分钟热度😅~~。
 
 ### 你现在看到的LOGO便是成品，emm，可能也谈不上多好看，但总归比之前的强上那么一丢丢。
 
 先谈谈我自己的理解吧！
 `两个拉着手的小人其实是本站英文首字母缩写MH变化而来（有个小细节是两个人长得不完全一样哦）；背后的水墨画风的小山暗示前路漫漫，是有危险也有机遇；头上小而明亮的太阳是希望我能有一个一直指引我前进方向的目标（或者说是希望、决心）。`
 
-这个logo并非定下来不变了，随时可能再次修改、替换。
+这个logo不是最后定下来的一版，日后可能会继续修改完善。
 
 用AI生成固然方便快捷，可我认为有几点还是值得特别关注的：
 
@@ -40,12 +40,12 @@
 
 让我们一起，用爱生图！
 
-[^1]:需要注意的是，Kimi也好，豆包也好，DeepSeek也好，这些大模型本身就不是专门为图像创作所开发的，生成效果只能说是差强人意（大体上过得去）。如需专业创作，请移步[Midjourney](https://www.midjourney.com/home)等。本文并非广告，只是经验分享而已。本站不对您因产品问题产生的热和损失负责。
+[^1]:需要注意的是，Kimi也好，豆包也好，DeepSeek也好，这些大模型本身就不是专门为图像创作所开发的，生成效果只能说是差强人意（大体上过得去）。如需专业创作，请移步[Midjourney](https://www.midjourney.com/home)等。本文并非广告，只是经验分享而已。本站不对您因产品自身问题产生的任何损失负责。
 
 [^2]:一些可能用到的工具：
 [Remove.vg](https://www.remove.bg)，在线抠图
-[ImagesTool](https://imagestool.com/zh-cn/watermark)，在线去水印
-
+[ImagesTool](https://imagestool.com/zh-cn/watermark)，在线添加水印
+[Dewatermark.AI](https://dewatermark.ai/)，在线去水印
 
 
 
