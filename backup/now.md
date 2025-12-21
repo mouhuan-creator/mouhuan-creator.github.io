@@ -9,6 +9,6 @@
 
 
 
-最后更新于2025/11/26，感冒了，给自己放个假。。
+最后更新于2025/12.21，冬至日，食饺子。
 ***
 注：`Now Page`概念源自[Derek Sivers](https://sive.rs)  发起的[nownownow.com](https://nownownow.com/about)项目，你也可以在自己的网站中添加一个`/now`页面，加入这项倡议。本站目前未加入该企划中，仅试运行。
