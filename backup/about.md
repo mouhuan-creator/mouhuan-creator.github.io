@@ -62,7 +62,7 @@
 注：目前我正在读高三，邮件回复周期会较长，请见谅！看到了一定会回复！
 
 email: `hi@mouhuan.com`
-tg: @HitEnterBot
+tg: @yamiwiki（因tg双向限制，请加入该群聊后发起私聊）
 
 
 
@@ -74,10 +74,10 @@ RSS是一种很好的信息订阅方式，但如果可以的话，谋欢还是�
 ## 站点构建
 域名：[Porkbun](https://porkbun.com)
 程序：[Gmeek](https://github.com/Meekdai/meekdai.github.io)
-DNS：[Cloudflare](https://cloudflare.com)
+DNS：[阿里云](https://aliyun.com)
 邮件：[阿里云企业邮箱](https://aliyun.com)
 图床：[聚合图床](https://superbed.cc)
-emoji：[Emoji Spark](https://emojispark.com/)
+Emoji：[Emoji Spark](https://emojispark.com/)
 
 ## [谋欢] 内容版权©
 本站所有内容均可以自由转载到您的非商业性网站上，保留原文链接及署名即可。
