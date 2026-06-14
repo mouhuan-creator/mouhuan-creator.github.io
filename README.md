@@ -1,5 +1,5 @@
-# 谋欢 :link: https://mouhuan-creator.github.io 
-### :page_facing_up: [6](https://mouhuan-creator.github.io/tag.html) 
+# 谋欢 :link: https://mouhuan.com
+### :page_facing_up: [6](https://mouhuan.com/tag.html) 
 ### :speech_balloon: 0 
 ### :hibiscus: 6906 
 ### :alarm_clock: 2026-02-16 20:38:13 
