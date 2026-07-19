@@ -40,6 +40,6 @@ Disallow: /
 User-agent: DuckAssistBot
 Disallow: /
 
-# Allow all other crawlers (search engines, feed readers, etc.)
+# Allow all other crawlers
 User-agent: *
 Allow: /
