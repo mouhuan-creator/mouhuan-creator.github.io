@@ -65,7 +65,7 @@ li p{text-indent:0!important}
   <main>
     <article>
     <h1 style="font-size:1.8em;margin-bottom:0.2em">XING</h1>
-    <div style="color:#6B5B4F;font-size:0.9em;margin-top:0.5em">2026-07-18 · 1163字符</div>
+    <div style="color:#6B5B4F;font-size:0.9em;margin-top:0.5em">2026-07-18 · 1172字符</div>
     <h2 id="什么是xing?">什么是XING?</h2>
 <p><code>XING</code>是本站所使用的静态博客生成器的名称。至于这个玩意儿……是我用<del>指使</del>AI（前期是Kimi，后期是Deepseek）搓出来的给自己写博客用的从.md文件到.html网页部署的方案。</p>
 <p>不过也是极其粗糙的一个作品，目前还处于调试阶段……所以出现什么故障都是有可能的，一直处于修修补补的状态。</p>
@@ -73,14 +73,14 @@ li p{text-indent:0!important}
 <p>我本地存放的目录层级：</p>
 <div class="code-block" style="position:relative;margin:1.2em 0;background:#2d2d2d;border-radius:8px;border:1px solid #444;overflow:hidden">
       <div style="display:flex;justify-content:flex-end;padding:0.3em 0.8em;background:#3d3d3d;border-bottom:1px solid #444">
-        <button class="copy-btn" onclick="copyCode(this, 'code-h3liljqom')" style="background:transparent;border:none;color:#888;cursor:pointer;padding:0.2em 0.4em;transition:color 0.2s;display:flex;align-items:center;justify-content:center" title="复制代码">
+        <button class="copy-btn" onclick="copyCode(this, 'code-di9gkm785')" style="background:transparent;border:none;color:#888;cursor:pointer;padding:0.2em 0.4em;transition:color 0.2s;display:flex;align-items:center;justify-content:center" title="复制代码">
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
             <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
           </svg>
         </button>
       </div>
-      <pre id="code-h3liljqom" style="margin:0;padding:1em;overflow:auto;background:#2d2d2d"><code style="font-family:'JetBrains Mono','Fira Code',monospace;font-size:0.85em;line-height:1.7;color:#e0e0e0;white-space:pre-wrap;word-break:break-all">项目根目录
+      <pre id="code-di9gkm785" style="margin:0;padding:1em;overflow:auto;background:#2d2d2d"><code style="font-family:'JetBrains Mono','Fira Code',monospace;font-size:0.85em;line-height:1.7;color:#e0e0e0;white-space:pre-wrap;word-break:break-all">项目根目录
 ├── 源码层(写死的)
 │   ├── build.js        → 真正的核心
 │   ├── posts/          → 被 build.js 读取，生成.html
@@ -107,7 +107,7 @@ li p{text-indent:0!important}
 <p>把.md文件放到posts文件夹里，静态文件放在static文件夹中，图片用外链（不然加载太慢了）。</p>
 </li>
 <li>
-<p>在根目录运行<code>cmd</code>》<code>node build.js</code>》<code>surge dist</code>，完成部署。</p>
+<p>在根目录运行<code>cmd</code>》<code>node build.js</code>》拖拽到Github，完成部署。</p>
 </li>
 </ol>
 <h2 id="特性">特性</h2>
@@ -125,19 +125,19 @@ li p{text-indent:0!important}
 <p>可以使用markdown写作，更顺手。</p>
 </li>
 <li>
-<p>每次发布都要打开电脑（严重的缺点！我其实极少打开电脑）</p>
+<p>每次发布都要打开电脑（严重缺点，因为我有时候真的懒得打开）</p>
 </li>
 <li>
 <p>本来就用node.js，所以集成surge.sh算是水到渠成的事，一行命令即可部署，快速便捷。</p>
 </li>
 <li>
-<p>因为surge免费版没有自定义域的SSL功能，所以临时使用cf来套用CDN，导致在国内访问效果“喜人”😢（不过还是强于surge）。日后可能考虑用cf优选或者别的什么解决方案。</p>
+<p>~~因为surge免费版没有自定义域的SSL功能，所以临时使用cf来套用CDN，导致在国内访问效果“喜人”😢（不过还是强于surge）。日后可能考虑用cf优选或者别的什么解决方案。~~已换回Github Pages</p>
 </li>
 <li>
 <p>除图床外没有外部依赖，隐私更友好。</p>
 </li>
 <li>
-<p>因为设计上的因素，本站不采用路径区分文章和页面，毕竟它们有些时候是会互相转化的。</p>
+<p>不采用路径区分文章和页面，毕竟它们有些时候是会互相转化的。</p>
 </li>
 </ul>
 <p>（所以这玩意应该会被我使用蛮长一段时间，除非我修不好它了）</p>
