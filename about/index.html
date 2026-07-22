@@ -7,7 +7,7 @@
   
 <meta name="robots" content="noai, noimageai">
 <meta name="referrer" content="no-referrer">
-<meta name="description" content="写下点什么，以期谋求片刻欢愉，仅此而已。"><link rel="me" href="https://c7.io/@sad">
+<meta name="description" content="谋求片刻欢愉。"><link rel="me" href="https://c7.io/@sad">
 <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="https://www.mouhuan.com/atom.xml">
 <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://www.mouhuan.com/rss.xml">
 <link rel="alternate" type="application/json" title="JSON Feed" href="https://www.mouhuan.com/feed.json"><meta property="og:title" content="About · 谋欢">
@@ -19,6 +19,7 @@
   <style>*{box-sizing:border-box;margin:0}
 body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:#E6E6FA;color:#3D2B1F;line-height:1.9;letter-spacing:0.03em;max-width:680px;margin:0 auto;padding:0 1.5em}
 article p{text-indent:2em;line-height:2;letter-spacing:0.04em;font-size:17px;margin-bottom:0.8em;word-break:break-word;text-align:justify}
+article p img{text-indent:0;display:block;margin:0 auto}
 a{color:inherit;text-decoration:none}
 a:hover{text-decoration:underline}
 img{max-width:100%}
@@ -28,18 +29,18 @@ blockquote p{margin:0.5em 0;text-indent:0;font-size:17px;word-break:break-word;t
 del{text-decoration:line-through;text-decoration-thickness:2px;color:inherit;background:transparent}
 code{background:#2d2d2d!important;color:#e0e0e0!important;padding:0.15em 0.4em!important;border-radius:4px!important;font-family:'JetBrains Mono','Fira Code',monospace!important;font-size:0.9em!important;word-break:break-word}
 li p{text-indent:0!important}
-.toc-container{position:fixed;bottom:2em;right:2em;z-index:100}
-.toc-btn{background:rgba(245,245,245,0.95);border:1px solid rgba(107,91,79,0.2);border-radius:50%;width:3em;height:3em;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,0.1);transition:all 0.3s cubic-bezier(0.4,0,0.2,1);display:flex;align-items:center;justify-content:center;font-size:0.9em;color:#6B5B4F}
+.toc-container{position:fixed;bottom:2em;right:2em;display:flex;flex-direction:column;align-items:center;gap:0.6em;z-index:100}
+.toc-btn{width:3em;height:3em;border-radius:50%;background:rgba(245,245,245,0.95);border:1px solid rgba(107,91,79,0.2);cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:flex;align-items:center;justify-content:center;font-size:0.9em;color:#6B5B4F}
 .toc-btn:hover{transform:scale(1.05);box-shadow:0 4px 12px rgba(0,0,0,0.15)}
-.toc-panel{position:absolute;bottom:3.5em;right:0;background:rgba(245,245,245,0.95);border:1px solid rgba(107,91,79,0.15);border-radius:8px;padding:1em;width:220px;max-height:60vh;overflow-y:auto;box-shadow:0 4px 20px rgba(0,0,0,0.1);backdrop-filter:blur(10px)}
+.back-top{width:3em;height:3em;border-radius:50%;background:rgba(245,245,245,0.95);border:1px solid rgba(107,91,79,0.2);cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:flex;align-items:center;justify-content:center;font-size:0.9em;color:#6B5B4F;opacity:0;transition:opacity 0.3s}
+.back-top:hover{transform:scale(1.05);box-shadow:0 4px 12px rgba(0,0,0,0.15)}
+.back-top-only{position:fixed;bottom:2em;right:2em;width:3em;height:3em;border-radius:50%;background:rgba(245,245,245,0.95);border:1px solid rgba(107,91,79,0.2);cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:flex;align-items:center;justify-content:center;font-size:0.9em;color:#6B5B4F;opacity:0;transition:opacity 0.3s;z-index:100}
+.back-top-only:hover{transform:scale(1.05);box-shadow:0 4px 12px rgba(0,0,0,0.15)}
+.toc-panel{position:fixed;bottom:5.5em;right:2em;background:rgba(245,245,245,0.95);border:1px solid rgba(107,91,79,0.15);border-radius:8px;padding:1em;width:220px;max-height:60vh;overflow-y:auto;box-shadow:0 4px 20px rgba(0,0,0,0.1);backdrop-filter:blur(10px);transition:all 0.15s ease-out;transform:translateY(8px) scale(0.97);opacity:0;visibility:hidden;z-index:99}
 .toc-panel a{transition:all 0.2s}
 .toc-panel a:hover{color:#3D2B1F!important;border-bottom-color:#8B4513!important;padding-left:0.5em!important}
 .toc-panel a.active{color:#8B4513!important;border-bottom-color:#8B4513!important;padding-left:0.5em!important}
-.toc-panel{transition:all 0.15s ease-out;transform:translateY(8px) scale(0.97);opacity:0;visibility:hidden}
 .toc-panel.open{opacity:1;visibility:visible;transform:translateY(0) scale(1)}
-.back-top{position:fixed;bottom:6.5em;right:2em;width:3em;height:3em;border-radius:50%;background:rgba(245,245,245,0.95);border:1px solid rgba(107,91,79,0.2);cursor:pointer;opacity:0;transition:opacity 0.3s;display:flex;align-items:center;justify-content:center;font-size:0.9em;color:#6B5B4F;box-shadow:0 2px 8px rgba(0,0,0,0.1);z-index:99}
-.back-top:hover{transform:scale(1.05);box-shadow:0 4px 12px rgba(0,0,0,0.15)}
-.back-top.show{opacity:1}
 #lightbox{display:none;position:fixed;inset:0;background:rgba(230,230,250,0.92);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);z-index:9999;align-items:center;justify-content:center}
 #lightbox img{max-width:95%;max-height:95%;border-radius:8px;object-fit:contain;display:block;margin:auto;box-shadow:0 8px 32px rgba(0,0,0,0.15)}
 #lightbox button{position:absolute;background:rgba(61,43,31,0.12);border:none;color:#3D2B1F;font-size:2.5em;padding:0.1em 0.4em;border-radius:50%;cursor:pointer;backdrop-filter:blur(4px);transition:background 0.2s}
@@ -48,8 +49,8 @@ li p{text-indent:0!important}
 #lightbox-next{right:20px;top:50%;transform:translateY(-50%)}
 #lightbox-close{top:20px;right:25px;font-size:2.5em;background:none!important}
 #lightbox-close:hover{opacity:1}
-@media(max-width:768px){body,article,article p,main p,.code-block pre code{line-height:2.0!important}body,p,article p{letter-spacing:0.08em!important}article p{font-size:15px!important}blockquote p{font-size:15px!important}}
-@media print{body{background:white}nav,footer,.toc-container,.back-top,#lightbox{display:none}}</style>
+@media(max-width:768px){body,article,article p,main p,.code-block pre code{line-height:2.0!important}body,p,article p{letter-spacing:0.08em!important}article p{font-size:15px!important}blockquote p{font-size:15px!important}article h1{font-size:1.4em!important}}
+@media print{body{background:white}nav,footer,.toc-container,.back-top,.back-top-only,#lightbox{display:none}}</style>
 </head>
 <body>
   <nav style="display:flex;justify-content:space-between;align-items:center;padding:2em 0 0.2em 0;flex-wrap:wrap">
@@ -65,7 +66,7 @@ li p{text-indent:0!important}
   <main>
     <article>
     <h1 style="font-size:1.8em;margin-bottom:0.2em">About</h1>
-    <div style="color:#6B5B4F;font-size:0.9em;margin-top:0.5em">2024-07-08 · 2623字符</div><div style="color:#6B5B4F;font-size:0.9em;margin-bottom:0.8em">最后编辑：2026-07-20</div>
+    <div style="color:#6B5B4F;font-size:0.9em;margin-top:0.5em;margin-bottom:0.8em">2024-07-08 · 2625字符</div><div style="color:#6B5B4F;font-size:0.9em;margin-bottom:0.8em">最后编辑：2026-07-20</div>
     <h1><strong>关于</strong><sup><a href="#user-content-fn-more-info" id="user-content-fnref-more-info" data-footnote-ref="" aria-describedby="footnote-label">1</a></sup></h1>
 <hr />
 <h2 id="前引">前引</h2>
@@ -111,12 +112,12 @@ li p{text-indent:0!important}
 <p>在这个快餐式的时代，邮件这种缓慢、信息源单一的沟通方式似乎已经过时了，可我还是觉得，邮件是一种更为纯粹的文字交流：</p>
 <p>我们不用急着等待对方的回复，有更长的思考时间；同时因为较长的回复周期，一些在中心化社交平台上常见的无意义沟通，如“在吗？”，数量将会大大减少，我们可以更有效地交流；几乎只有文字，我们无需费心关注那些与内容无关的东西，专注于沟通本身。</p>
 <p>如果你也向往纯粹的文字沟通，欢迎来信！每一封来信我都会认真阅读，并回复！</p>
-<p>称呼吗？谋欢/佳茗/你……反正能让我知道是在称呼我，并且没有强攻击性/侮辱性的称呼都可</p>
-<p>email: <code>hi@mouhuan.com</code>，如果需要PGP，<a href="https://www.mouhuan.com/public-key.asc" style="color:#0066cc;text-decoration:none">这里</a>下载我的Public Key</p>
-<p>tg:  <code>@cold_cute </code></p>
-<p>Mastodon: <code>@sad@c7.io</code>，我的碎碎念</p>
-<p>个站商店：<a href="https://storeweb.cn/site/o/2418" style="color:#8B4513;text-decoration:none;background:linear-gradient(to top, #FFD700 40%, transparent 40%)" target="_blank" rel="noopener noreferrer">谋欢</a></p>
-<p>大佬论坛：<a href="https://www.dalao.net/user-819.htm" style="color:#8B4513;text-decoration:none;background:linear-gradient(to top, #FFD700 40%, transparent 40%)" target="_blank" rel="noopener noreferrer">佳茗</a></p>
+<p>称呼吗？谋欢/佳茗/你……反正能让我知道是在称呼我，并且没有强攻击性/侮辱性的称呼都行。<br />
+email: <code>hi@mouhuan.com</code>，如果需要PGP，点击<a href="https://www.mouhuan.com/public-key.asc" style="color:#0066cc;text-decoration:none">这里</a>下载我的Public Key<br />
+tg:  <code>cold_cute </code><br />
+Mastodon: <code>@sad@c7.io</code>，我的碎碎念<br />
+个站商店：<a href="https://storeweb.cn/site/o/2418" style="color:#8B4513;text-decoration:none;background:linear-gradient(to top, #FFD700 40%, transparent 40%)" target="_blank" rel="noopener noreferrer">谋欢</a><br />
+大佬论坛：<a href="https://www.dalao.net/user-819.htm" style="color:#8B4513;text-decoration:none;background:linear-gradient(to top, #FFD700 40%, transparent 40%)" target="_blank" rel="noopener noreferrer">佳茗</a></p>
 <h2 id="订阅">订阅</h2>
 <p>本站提供三种feed订阅协议（均为摘要输出）：</p>
 <p><code>https://www.mouhuan.com/atom.xml</code></p>
@@ -158,12 +159,10 @@ li p{text-indent:0!important}
     </article>
   </main>
   
-  
-    <div class="toc-container">
-      <button id="toc-btn" class="toc-btn" onclick="toggleToc()" title="目录">☰</button>
-      <div id="toc-panel" class="toc-panel"><a href="#前引" data-target="前引" onclick="closeToc()" style="display:block;color:#6B5B4F;padding:0.3em 0;text-decoration:none;border-bottom:1px solid transparent;transition:all 0.2s;font-size:1em">前引</a><a href="#蒙着薄雾的海。（第三人称自序）" data-target="蒙着薄雾的海。（第三人称自序）" onclick="closeToc()" style="display:block;color:#6B5B4F;padding:0.3em 0;text-decoration:none;border-bottom:1px solid transparent;transition:all 0.2s;font-size:1em">蒙着薄雾的海。（第三人称自序）</a><a href="#一瓯佳茗？" data-target="一瓯佳茗？" onclick="closeToc()" style="display:block;color:#6B5B4F;padding:0.3em 0;text-decoration:none;border-bottom:1px solid transparent;transition:all 0.2s;font-size:1em">一瓯佳茗？</a><a href="#不为谁而奏的歌。" data-target="不为谁而奏的歌。" onclick="closeToc()" style="display:block;color:#6B5B4F;padding:0.3em 0;text-decoration:none;border-bottom:1px solid transparent;transition:all 0.2s;font-size:1em">不为谁而奏的歌。</a><a href="#补充" data-target="补充" onclick="closeToc()" style="display:block;color:#6B5B4F;padding:0.3em 0;text-decoration:none;border-bottom:1px solid transparent;transition:all 0.2s;font-size:1em">补充</a><a href="#联系" data-target="联系" onclick="closeToc()" style="display:block;color:#6B5B4F;padding:0.3em 0;text-decoration:none;border-bottom:1px solid transparent;transition:all 0.2s;font-size:1em">联系</a><a href="#订阅" data-target="订阅" onclick="closeToc()" style="display:block;color:#6B5B4F;padding:0.3em 0;text-decoration:none;border-bottom:1px solid transparent;transition:all 0.2s;font-size:1em">订阅</a><a href="#站点构建" data-target="站点构建" onclick="closeToc()" style="display:block;color:#6B5B4F;padding:0.3em 0;text-decoration:none;border-bottom:1px solid transparent;transition:all 0.2s;font-size:1em">站点构建</a><a href="#隐私政策" data-target="隐私政策" onclick="closeToc()" style="display:block;color:#6B5B4F;padding:0.3em 0;text-decoration:none;border-bottom:1px solid transparent;transition:all 0.2s;font-size:1em">隐私政策</a><a href="#【谋欢】版权©-2026" data-target="【谋欢】版权©-2026" onclick="closeToc()" style="display:block;color:#6B5B4F;padding:0.3em 0;text-decoration:none;border-bottom:1px solid transparent;transition:all 0.2s;font-size:1em">【谋欢】版权© 2026</a></div>
-    </div>
-  <button id="back-top" class="back-top" onclick="scrollToTop()" title="按 T 键也可快速返回顶部哦！">↑</button>
+  <div class="toc-container">
+  <button class="back-top" onclick="scrollToTop()" title="按 T 键也可快速返回顶部哦！">↑</button>
+  <button class="toc-btn" onclick="toggleToc()" title="目录">☰</button>
+</div><div class="toc-panel"><a href="#前引" data-target="前引" onclick="closeToc()" style="display:block;color:#6B5B4F;padding:0.3em 0;text-decoration:none;border-bottom:1px solid transparent;transition:all 0.2s;font-size:1em">前引</a><a href="#蒙着薄雾的海。（第三人称自序）" data-target="蒙着薄雾的海。（第三人称自序）" onclick="closeToc()" style="display:block;color:#6B5B4F;padding:0.3em 0;text-decoration:none;border-bottom:1px solid transparent;transition:all 0.2s;font-size:1em">蒙着薄雾的海。（第三人称自序）</a><a href="#一瓯佳茗？" data-target="一瓯佳茗？" onclick="closeToc()" style="display:block;color:#6B5B4F;padding:0.3em 0;text-decoration:none;border-bottom:1px solid transparent;transition:all 0.2s;font-size:1em">一瓯佳茗？</a><a href="#不为谁而奏的歌。" data-target="不为谁而奏的歌。" onclick="closeToc()" style="display:block;color:#6B5B4F;padding:0.3em 0;text-decoration:none;border-bottom:1px solid transparent;transition:all 0.2s;font-size:1em">不为谁而奏的歌。</a><a href="#补充" data-target="补充" onclick="closeToc()" style="display:block;color:#6B5B4F;padding:0.3em 0;text-decoration:none;border-bottom:1px solid transparent;transition:all 0.2s;font-size:1em">补充</a><a href="#联系" data-target="联系" onclick="closeToc()" style="display:block;color:#6B5B4F;padding:0.3em 0;text-decoration:none;border-bottom:1px solid transparent;transition:all 0.2s;font-size:1em">联系</a><a href="#订阅" data-target="订阅" onclick="closeToc()" style="display:block;color:#6B5B4F;padding:0.3em 0;text-decoration:none;border-bottom:1px solid transparent;transition:all 0.2s;font-size:1em">订阅</a><a href="#站点构建" data-target="站点构建" onclick="closeToc()" style="display:block;color:#6B5B4F;padding:0.3em 0;text-decoration:none;border-bottom:1px solid transparent;transition:all 0.2s;font-size:1em">站点构建</a><a href="#隐私政策" data-target="隐私政策" onclick="closeToc()" style="display:block;color:#6B5B4F;padding:0.3em 0;text-decoration:none;border-bottom:1px solid transparent;transition:all 0.2s;font-size:1em">隐私政策</a><a href="#【谋欢】版权©-2026" data-target="【谋欢】版权©-2026" onclick="closeToc()" style="display:block;color:#6B5B4F;padding:0.3em 0;text-decoration:none;border-bottom:1px solid transparent;transition:all 0.2s;font-size:1em">【谋欢】版权© 2026</a></div>
   
 <div id="lightbox" style="display:none;position:fixed;inset:0;background:rgba(230,230,250,0.92);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);z-index:9999;align-items:center;justify-content:center">
   <img id="lightbox-img" style="max-width:95%;max-height:95%;border-radius:8px;object-fit:contain;display:block;margin:auto;box-shadow:0 8px 32px rgba(0,0,0,0.15)" />
@@ -228,13 +227,17 @@ document.addEventListener('DOMContentLoaded', function() {
   imgs.forEach((img, idx) => { img.onclick = function() { openLightbox(idx); }; });
 });
 
-function toggleToc(){const p=document.getElementById('toc-panel'),b=document.getElementById('toc-btn');if(p.classList.contains('open')){closeToc()}else{p.classList.add('open');b.style.transform='rotate(90deg)'}}
-function closeToc(){const p=document.getElementById('toc-panel'),b=document.getElementById('toc-btn');p.classList.remove('open');b.style.transform='rotate(0deg)'}
-document.addEventListener('click',e=>{if(!e.target.closest('.toc-container'))closeToc()});
+function toggleToc(){const p=document.querySelector('.toc-panel'),b=document.querySelector('.toc-btn');if(p){p.classList.toggle('open');if(b){b.style.transform = p.classList.contains('open') ? 'rotate(90deg)' : 'rotate(0deg)'}}}
+function closeToc(){const p=document.querySelector('.toc-panel'),b=document.querySelector('.toc-btn');if(p){p.classList.remove('open');if(b){b.style.transform='rotate(0deg)'}}}
+document.addEventListener('click',e=>{if(!e.target.closest('.toc-container')&&!e.target.closest('.toc-panel')){closeToc()}});
 
-const backTop=document.getElementById('back-top');
+const backTop = document.querySelector('.back-top') || document.querySelector('.back-top-only');
 function scrollToTop(){window.scrollTo({top:0,behavior:'smooth'})}
-window.addEventListener('scroll',()=>{backTop.classList.toggle('show',window.scrollY>500)});
+window.addEventListener('scroll',()=>{
+  if (backTop) {
+    backTop.style.opacity = window.scrollY > 500 ? '1' : '0';
+  }
+});
 document.addEventListener('keydown',e=>{if(e.key==='t'&&!e.ctrlKey&&!e.metaKey&&!e.altKey&&!e.shiftKey){e.preventDefault();scrollToTop()}});
 
 window.addEventListener('scroll',()=>{
@@ -273,9 +276,7 @@ function copyCode(btn, id) {
   });
 }
 
-// ============================================================
-// 文章页加载后自动滚动到标题位置（标题紧贴屏幕顶部）
-// ============================================================
+// 文章/页面加载后自动滚动到标题位置（标题紧贴屏幕顶部）
 if (document.querySelector('article h1')) {
   const title = document.querySelector('article h1');
   const titleTop = title.getBoundingClientRect().top + window.scrollY;
