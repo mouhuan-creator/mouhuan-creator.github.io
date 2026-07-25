@@ -18,7 +18,7 @@
   <title>谋欢</title>
   <style>*{box-sizing:border-box;margin:0}
 body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:#E6E6FA;color:#3D2B1F;line-height:1.9;letter-spacing:0.03em;max-width:680px;margin:0 auto;padding:0 1.5em}
-article p{text-indent:2em;line-height:2;letter-spacing:0.04em;font-size:17px;margin-bottom:0.8em;word-break:break-word;text-align:justify}
+article p{line-height:2;letter-spacing:0.04em;font-size:17px;margin-bottom:0.8em;word-break:break-word;text-align:justify}
 article p img{text-indent:0;display:block;margin:0 auto}
 a{color:inherit;text-decoration:none}
 a:hover{text-decoration:underline}
@@ -29,6 +29,15 @@ blockquote p{margin:0.5em 0;text-indent:0;font-size:17px;word-break:break-word;t
 del{text-decoration:line-through;text-decoration-thickness:2px;color:inherit;background:transparent}
 code{background:#2d2d2d!important;color:#e0e0e0!important;padding:0.15em 0.4em!important;border-radius:4px!important;font-family:'JetBrains Mono','Fira Code',monospace!important;font-size:0.9em!important;word-break:break-word}
 li p{text-indent:0!important}
+details{border:2px solid rgba(107,91,79,0.15);border-radius:8px;padding:0.5em 1em;margin:1em 0}
+details[open]{padding-bottom:1em}
+details summary{cursor:pointer}
+details[open] summary{margin-bottom:0.5em}
+.footnotes{border-top:1px solid rgba(107,91,79,0.15);margin-top:2em;padding-top:1em}
+.footnotes h2{display:none}
+.footnotes .footnote-ref{font-size:0.75em;vertical-align:super}
+.footnotes ol{list-style:decimal;padding-left:1.5em;font-size:0.9em;color:#6B5B4F}
+.footnotes ol li p{display:inline;font-size:0.9em}
 .toc-container{position:fixed;bottom:2em;right:2em;display:flex;flex-direction:column;align-items:center;gap:0.6em;z-index:100}
 .toc-btn{width:3em;height:3em;border-radius:50%;background:rgba(245,245,245,0.95);border:1px solid rgba(107,91,79,0.2);cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:flex;align-items:center;justify-content:center;font-size:0.9em;color:#6B5B4F}
 .toc-btn:hover{transform:scale(1.05);box-shadow:0 4px 12px rgba(0,0,0,0.15)}

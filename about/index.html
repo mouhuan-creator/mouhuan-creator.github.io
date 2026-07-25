@@ -18,7 +18,7 @@
   <title>About · 谋欢</title>
   <style>*{box-sizing:border-box;margin:0}
 body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:#E6E6FA;color:#3D2B1F;line-height:1.9;letter-spacing:0.03em;max-width:680px;margin:0 auto;padding:0 1.5em}
-article p{text-indent:2em;line-height:2;letter-spacing:0.04em;font-size:17px;margin-bottom:0.8em;word-break:break-word;text-align:justify}
+article p{line-height:2;letter-spacing:0.04em;font-size:17px;margin-bottom:0.8em;word-break:break-word;text-align:justify}
 article p img{text-indent:0;display:block;margin:0 auto}
 a{color:inherit;text-decoration:none}
 a:hover{text-decoration:underline}
@@ -29,6 +29,15 @@ blockquote p{margin:0.5em 0;text-indent:0;font-size:17px;word-break:break-word;t
 del{text-decoration:line-through;text-decoration-thickness:2px;color:inherit;background:transparent}
 code{background:#2d2d2d!important;color:#e0e0e0!important;padding:0.15em 0.4em!important;border-radius:4px!important;font-family:'JetBrains Mono','Fira Code',monospace!important;font-size:0.9em!important;word-break:break-word}
 li p{text-indent:0!important}
+details{border:2px solid rgba(107,91,79,0.15);border-radius:8px;padding:0.5em 1em;margin:1em 0}
+details[open]{padding-bottom:1em}
+details summary{cursor:pointer}
+details[open] summary{margin-bottom:0.5em}
+.footnotes{border-top:1px solid rgba(107,91,79,0.15);margin-top:2em;padding-top:1em}
+.footnotes h2{display:none}
+.footnotes .footnote-ref{font-size:0.75em;vertical-align:super}
+.footnotes ol{list-style:decimal;padding-left:1.5em;font-size:0.9em;color:#6B5B4F}
+.footnotes ol li p{display:inline;font-size:0.9em}
 .toc-container{position:fixed;bottom:2em;right:2em;display:flex;flex-direction:column;align-items:center;gap:0.6em;z-index:100}
 .toc-btn{width:3em;height:3em;border-radius:50%;background:rgba(245,245,245,0.95);border:1px solid rgba(107,91,79,0.2);cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:flex;align-items:center;justify-content:center;font-size:0.9em;color:#6B5B4F}
 .toc-btn:hover{transform:scale(1.05);box-shadow:0 4px 12px rgba(0,0,0,0.15)}
@@ -66,7 +75,7 @@ li p{text-indent:0!important}
   <main>
     <article>
     <h1 style="font-size:1.8em;margin-bottom:0.2em">About</h1>
-    <div style="color:#6B5B4F;font-size:0.9em;margin-top:0.5em;margin-bottom:0.8em">2024-07-08 · 2625字符</div><div style="color:#6B5B4F;font-size:0.9em;margin-bottom:0.8em">最后编辑：2026-07-20</div>
+    <div style="color:#6B5B4F;font-size:0.9em;margin-top:0.3em;margin-bottom:0.3em">2024-07-08 · 2591字符</div><div style="color:#6B5B4F;font-size:0.9em;margin-top:-0.2em;margin-bottom:0.5em">最后编辑：2026-07-20</div>
     <h1><strong>关于</strong><sup><a href="#user-content-fn-more-info" id="user-content-fnref-more-info" data-footnote-ref="" aria-describedby="footnote-label">1</a></sup></h1>
 <hr />
 <h2 id="前引">前引</h2>
@@ -77,7 +86,6 @@ li p{text-indent:0!important}
 <p>这应该也算是本站的Slogan。</p>
 <p>网站的名字主要是为了契合域名<code>mouhuan.com</code>，关于这个域名还有个有趣的小故事：</p>
 <p>大约在23年我就在某平台一口价中看到了这个域名，当时犹犹豫豫<del>抠抠搜搜</del>没有出手，就此错过了。后面回过味来，觉得越看越喜欢，不过已经下架并被原持有人建站，只好作罢。不成想前些天（2025/03/30）在某域名交易平台瞎晃悠，无意中再次看见这个域名，用现在网络上流行的话说，“再次相遇，心跳比我更先认出你”，回想起两年前的经历，不忍心再次错过，正好手上也没有合适的博客域名，于是果断拿下。</p>
-<p>虽然</p>
 <p>这也算是弥补了自己两年前的遗憾<sup><a href="#user-content-fn-yi-han" id="user-content-fnref-yi-han" data-footnote-ref="" aria-describedby="footnote-label">2</a></sup>吧！</p>
 <h2 id="蒙着薄雾的海。（第三人称自序）">蒙着薄雾的海。（第三人称自序）</h2>
 <p>谋欢出生于祖国南边北纬约十九度，东经约一百一十度的岛屿上。从小就对这片包裹着整座海岛的海洋充满好奇。</p>
@@ -108,13 +116,13 @@ li p{text-indent:0!important}
 <h2 id="补充">补充</h2>
 <p>不著名文字垃圾制造者；域名爱好者；技术白痴；准大学生。</p>
 <h2 id="联系">联系</h2>
-<p>本站使用自研程序，没有评论功能。如果您在阅读完本站的文字后，产生了一些想法或意见，或者只是打个招呼，都欢迎使用邮件进行沟通，也可使用 Telegram。</p>
+<p>本站使用自研程序，没有评论功能。如果您在阅读完本站的文字后，产生了一些想法或意见，或者只是打个招呼，都欢迎使用邮件进行沟通，也可使用Telegram。</p>
 <p>在这个快餐式的时代，邮件这种缓慢、信息源单一的沟通方式似乎已经过时了，可我还是觉得，邮件是一种更为纯粹的文字交流：</p>
 <p>我们不用急着等待对方的回复，有更长的思考时间；同时因为较长的回复周期，一些在中心化社交平台上常见的无意义沟通，如“在吗？”，数量将会大大减少，我们可以更有效地交流；几乎只有文字，我们无需费心关注那些与内容无关的东西，专注于沟通本身。</p>
 <p>如果你也向往纯粹的文字沟通，欢迎来信！每一封来信我都会认真阅读，并回复！</p>
 <p>称呼吗？谋欢/佳茗/你……反正能让我知道是在称呼我，并且没有强攻击性/侮辱性的称呼都行。<br />
-email: <code>hi@mouhuan.com</code>，如果需要PGP，点击<a href="https://www.mouhuan.com/public-key.asc" style="color:#0066cc;text-decoration:none">这里</a>下载我的Public Key<br />
-tg:  <code>cold_cute </code><br />
+email: <code>mx7h@proton.me</code><br />
+tg:  <code>@cold_cute </code><br />
 Mastodon: <code>@sad@c7.io</code>，我的碎碎念<br />
 个站商店：<a href="https://storeweb.cn/site/o/2418" style="color:#8B4513;text-decoration:none;background:linear-gradient(to top, #FFD700 40%, transparent 40%)" target="_blank" rel="noopener noreferrer">谋欢</a><br />
 大佬论坛：<a href="https://www.dalao.net/user-819.htm" style="color:#8B4513;text-decoration:none;background:linear-gradient(to top, #FFD700 40%, transparent 40%)" target="_blank" rel="noopener noreferrer">佳茗</a></p>
@@ -132,7 +140,7 @@ Mastodon: <code>@sad@c7.io</code>，我的碎碎念<br />
 <p>域名：<a href="https://porkbun.com" style="color:#8B4513;text-decoration:none;background:linear-gradient(to top, #FFD700 40%, transparent 40%)" target="_blank" rel="noopener noreferrer">Porkbun</a></p>
 <p>程序：<a href="/xing" style="color:#0066cc;text-decoration:none">XING</a>，托管于 <a href="https://pages.github.com" style="color:#8B4513;text-decoration:none;background:linear-gradient(to top, #FFD700 40%, transparent 40%)" target="_blank" rel="noopener noreferrer">Github Pages</a></p>
 <p>DNS：<a href="https://cloudflare.com" style="color:#8B4513;text-decoration:none;background:linear-gradient(to top, #FFD700 40%, transparent 40%)" target="_blank" rel="noopener noreferrer">Cloudflare</a></p>
-<p>邮件：<a href="https://purelymail.com" style="color:#8B4513;text-decoration:none;background:linear-gradient(to top, #FFD700 40%, transparent 40%)" target="_blank" rel="noopener noreferrer">Purelymail</a></p>
+<p>邮件：暂无域名邮箱</p>
 <p>图床：<a href="https://s.ee" style="color:#8B4513;text-decoration:none;background:linear-gradient(to top, #FFD700 40%, transparent 40%)" target="_blank" rel="noopener noreferrer">S.EE</a></p>
 <p>Emoji：<a href="https://emojispark.com/" style="color:#8B4513;text-decoration:none;background:linear-gradient(to top, #FFD700 40%, transparent 40%)" target="_blank" rel="noopener noreferrer">Emoji Spark</a></p>
 <h2 id="隐私政策">隐私政策</h2>
@@ -158,11 +166,13 @@ Mastodon: <code>@sad@c7.io</code>，我的碎碎念<br />
 </section>
     </article>
   </main>
-  
+  <footer style="text-align:center;padding:1.5em 0;color:#6B5B4F;font-size:0.8em">
+  Copyright © 2026 · Powered by ♥️
+</footer>
   <div class="toc-container">
-  <button class="back-top" onclick="scrollToTop()" title="按 T 键也可快速返回顶部哦！">↑</button>
-  <button class="toc-btn" onclick="toggleToc()" title="目录">☰</button>
-</div><div class="toc-panel"><a href="#前引" data-target="前引" onclick="closeToc()" style="display:block;color:#6B5B4F;padding:0.3em 0;text-decoration:none;border-bottom:1px solid transparent;transition:all 0.2s;font-size:1em">前引</a><a href="#蒙着薄雾的海。（第三人称自序）" data-target="蒙着薄雾的海。（第三人称自序）" onclick="closeToc()" style="display:block;color:#6B5B4F;padding:0.3em 0;text-decoration:none;border-bottom:1px solid transparent;transition:all 0.2s;font-size:1em">蒙着薄雾的海。（第三人称自序）</a><a href="#一瓯佳茗？" data-target="一瓯佳茗？" onclick="closeToc()" style="display:block;color:#6B5B4F;padding:0.3em 0;text-decoration:none;border-bottom:1px solid transparent;transition:all 0.2s;font-size:1em">一瓯佳茗？</a><a href="#不为谁而奏的歌。" data-target="不为谁而奏的歌。" onclick="closeToc()" style="display:block;color:#6B5B4F;padding:0.3em 0;text-decoration:none;border-bottom:1px solid transparent;transition:all 0.2s;font-size:1em">不为谁而奏的歌。</a><a href="#补充" data-target="补充" onclick="closeToc()" style="display:block;color:#6B5B4F;padding:0.3em 0;text-decoration:none;border-bottom:1px solid transparent;transition:all 0.2s;font-size:1em">补充</a><a href="#联系" data-target="联系" onclick="closeToc()" style="display:block;color:#6B5B4F;padding:0.3em 0;text-decoration:none;border-bottom:1px solid transparent;transition:all 0.2s;font-size:1em">联系</a><a href="#订阅" data-target="订阅" onclick="closeToc()" style="display:block;color:#6B5B4F;padding:0.3em 0;text-decoration:none;border-bottom:1px solid transparent;transition:all 0.2s;font-size:1em">订阅</a><a href="#站点构建" data-target="站点构建" onclick="closeToc()" style="display:block;color:#6B5B4F;padding:0.3em 0;text-decoration:none;border-bottom:1px solid transparent;transition:all 0.2s;font-size:1em">站点构建</a><a href="#隐私政策" data-target="隐私政策" onclick="closeToc()" style="display:block;color:#6B5B4F;padding:0.3em 0;text-decoration:none;border-bottom:1px solid transparent;transition:all 0.2s;font-size:1em">隐私政策</a><a href="#【谋欢】版权©-2026" data-target="【谋欢】版权©-2026" onclick="closeToc()" style="display:block;color:#6B5B4F;padding:0.3em 0;text-decoration:none;border-bottom:1px solid transparent;transition:all 0.2s;font-size:1em">【谋欢】版权© 2026</a></div>
+    <button class="back-top" onclick="scrollToTop()" title="按 T 键也可快速返回顶部哦！">↑</button>
+    <button class="toc-btn" onclick="toggleToc()" title="目录">☰</button>
+  </div><div class="toc-panel"><a href="#前引" data-target="前引" onclick="closeToc()" style="display:block;color:#6B5B4F;padding:0.3em 0;text-decoration:none;border-bottom:1px solid transparent;transition:all 0.2s;font-size:1em">前引</a><a href="#蒙着薄雾的海。（第三人称自序）" data-target="蒙着薄雾的海。（第三人称自序）" onclick="closeToc()" style="display:block;color:#6B5B4F;padding:0.3em 0;text-decoration:none;border-bottom:1px solid transparent;transition:all 0.2s;font-size:1em">蒙着薄雾的海。（第三人称自序）</a><a href="#一瓯佳茗？" data-target="一瓯佳茗？" onclick="closeToc()" style="display:block;color:#6B5B4F;padding:0.3em 0;text-decoration:none;border-bottom:1px solid transparent;transition:all 0.2s;font-size:1em">一瓯佳茗？</a><a href="#不为谁而奏的歌。" data-target="不为谁而奏的歌。" onclick="closeToc()" style="display:block;color:#6B5B4F;padding:0.3em 0;text-decoration:none;border-bottom:1px solid transparent;transition:all 0.2s;font-size:1em">不为谁而奏的歌。</a><a href="#补充" data-target="补充" onclick="closeToc()" style="display:block;color:#6B5B4F;padding:0.3em 0;text-decoration:none;border-bottom:1px solid transparent;transition:all 0.2s;font-size:1em">补充</a><a href="#联系" data-target="联系" onclick="closeToc()" style="display:block;color:#6B5B4F;padding:0.3em 0;text-decoration:none;border-bottom:1px solid transparent;transition:all 0.2s;font-size:1em">联系</a><a href="#订阅" data-target="订阅" onclick="closeToc()" style="display:block;color:#6B5B4F;padding:0.3em 0;text-decoration:none;border-bottom:1px solid transparent;transition:all 0.2s;font-size:1em">订阅</a><a href="#站点构建" data-target="站点构建" onclick="closeToc()" style="display:block;color:#6B5B4F;padding:0.3em 0;text-decoration:none;border-bottom:1px solid transparent;transition:all 0.2s;font-size:1em">站点构建</a><a href="#隐私政策" data-target="隐私政策" onclick="closeToc()" style="display:block;color:#6B5B4F;padding:0.3em 0;text-decoration:none;border-bottom:1px solid transparent;transition:all 0.2s;font-size:1em">隐私政策</a><a href="#【谋欢】版权©-2026" data-target="【谋欢】版权©-2026" onclick="closeToc()" style="display:block;color:#6B5B4F;padding:0.3em 0;text-decoration:none;border-bottom:1px solid transparent;transition:all 0.2s;font-size:1em">【谋欢】版权© 2026</a></div>
   
 <div id="lightbox" style="display:none;position:fixed;inset:0;background:rgba(230,230,250,0.92);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);z-index:9999;align-items:center;justify-content:center">
   <img id="lightbox-img" style="max-width:95%;max-height:95%;border-radius:8px;object-fit:contain;display:block;margin:auto;box-shadow:0 8px 32px rgba(0,0,0,0.15)" />
