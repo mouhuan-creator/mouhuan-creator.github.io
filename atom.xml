@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>谋欢</title>
   <link href="https://www.mouhuan.com/"/><link rel="self" href="https://www.mouhuan.com/atom.xml"/>
-  <updated>2026-08-17T02:01:55.302Z</updated><id>https://www.mouhuan.com/</id>
+  <updated>2026-08-18T08:53:35.440Z</updated><id>https://www.mouhuan.com/</id>
   <author><name>佳茗</name></author>
   <generator>CustomBlog/1.0</generator>
   <entry>
@@ -44,21 +44,5 @@
     <updated>2024-08-30T00:00:04Z</updated>
     <author><name>佳茗</name></author>
     <content type="html"><![CDATA[更换密码 前言 之前我为了图省事，很多社交平台的账号名和密码都是用的同一套模板，只是在它的基础上改动一两个字符罢了。 比方说我的密码模板是zhangsan6666，那么我的某信密码大概就是zhangsan7777这样的形式。 所以说只要有人知道了我的任意一个平台的密码，那么他也许能很轻易的破解我的“...]]></content>
-  </entry>
-  <entry>
-    <title>听，停电了~</title>
-    <link href="https://www.mouhuan.com/ting-ting-dian-le/"/>
-    <id>https://www.mouhuan.com/ting-ting-dian-le/</id>
-    <updated>2024-08-30T00:00:05Z</updated>
-    <author><name>佳茗</name></author>
-    <content type="html"><![CDATA[特别说明：这篇文章那是初次发布在我的旧博客上，更换博客后将文章迁移了过来。这是第三次迁移过来（2026/07/07） 文章有所改动。 咦，要停电了？ 今天早上供电厅的人通知我们白天会停电检修电路，时间从早九点到晚九点。 听到这个消息，我和家人们都很震惊。 拜托，这可是海南，正值夏日最热的时候，你们却...]]></content>
-  </entry>
-  <entry>
-    <title>First Post</title>
-    <link href="https://www.mouhuan.com/first-post/"/>
-    <id>https://www.mouhuan.com/first-post/</id>
-    <updated>2023-07-19T00:00:06Z</updated>
-    <author><name>佳茗</name></author>
-    <content type="html"><![CDATA[其实First Post为题的博文我已经不是第一次写了，从2022年底到现在，折腾过好几个博客，每一次新博客的新生往往以这个标题的文章作为标志。 因此，对我来说，这篇文章对我来说并无“first”之意，但我还是习惯性的保留了这个标题。 在继续这个标题的说明之前，我想先写一写我的博客折腾史，以及博客对...]]></content>
   </entry>
 </feed>
