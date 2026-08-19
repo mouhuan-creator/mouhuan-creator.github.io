@@ -1,109 +1,664 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="robots" content="noindex,nofollow">
-  <meta name="referrer" content="no-referrer">
-  <meta name="description" content="谋求片刻欢愉。">
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="me" href="https://c7.io/@sad">
   
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="谋求片刻欢愉。">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="me" href="https://c7.io/@sad">
 <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="https://www.mouhuan.com/atom.xml">
 <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://www.mouhuan.com/rss.xml">
-<link rel="alternate" type="application/json" title="JSON Feed" href="https://www.mouhuan.com/feed.json"><meta property="og:title" content="谋欢">
+<link rel="alternate" type="application/json" title="JSON Feed" href="https://www.mouhuan.com/feed.json">
+<meta property="og:title" content="谋欢">
 <meta property="og:description" content="谋求片刻欢愉。">
 <meta property="og:url" content="https://www.mouhuan.com/p/2/">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://files.seeusercontent.com/2026/07/12/c3Xr/avatar.webp">
-  <title>谋欢</title>
-  <style>*{box-sizing:border-box;margin:0}
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:#FDF8F3;color:#3C3834;line-height:1.9;letter-spacing:0.01em;max-width:680px;margin:0 auto;padding:0 1.5em}
-article p{line-height:2;letter-spacing:inherit;font-size:17px;margin-bottom:0.8em;word-break:break-word;text-align:justify}
-article p img{text-indent:0;display:block;margin:0 auto}
-a{color:inherit;text-decoration:none}
-a:hover{text-decoration:underline}
-img{max-width:100%}
-.code-block:hover .copy-btn{opacity:1!important}
-blockquote{border-left:4px solid #C9B8A8;padding:0.5em 1em;margin:1em 0;background:rgba(201,184,168,0.10);border-radius:0 4px 4px 0;color:#8A7E72}
-blockquote p{margin:0.5em 0;text-indent:0;font-size:17px;word-break:break-word;text-align:justify}
-del{text-decoration:line-through;text-decoration-thickness:2px;color:inherit;background:transparent}
-code{background:#EDE4F0!important;color:#5B3E6B!important;padding:0.15em 0.4em!important;border-radius:4px!important;font-family:'JetBrains Mono','Fira Code',monospace!important;font-size:0.9em!important;word-break:break-word}
-li p{text-indent:0!important}
-details{background:rgba(60,56,52,0.04);border:2px solid #E8DFD6;border-radius:8px;padding:0.8em 1.2em;margin:1.2em 0}
-details summary{font-weight:600;cursor:pointer;padding:0.2em 0}
-details[open] summary{margin-bottom:0.6em}
-details p:last-child{margin-bottom:0}
-.footnotes{border-top:1px solid #E8DFD6;margin-top:2em;padding-top:1em}
-.footnotes h2{display:none}
-.footnotes .footnote-ref{font-size:0.75em;vertical-align:super}
-.footnotes ol{list-style:decimal;padding-left:1.5em;font-size:0.9em;color:#8A7E72}
-.footnotes ol li p{display:inline;font-size:0.9em}
-.toc-container{position:fixed;bottom:2em;right:2em;display:flex;flex-direction:column;align-items:center;gap:0.6em;z-index:100}
-.toc-btn,.back-top{width:3em;height:3em;border-radius:50%;background:rgba(253, 248, 243, 0.95);border:1px solid #E8DFD6;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,0.06);display:flex;align-items:center;justify-content:center;font-size:0.9em;color:#8A7E72}
-.toc-btn:hover,.back-top:hover,.back-top-only:hover{transform:scale(1.05);box-shadow:0 4px 12px rgba(0,0,0,0.10)}
-.back-top{opacity:0;transition:opacity 0.3s}
-.back-top-only{position:fixed;bottom:2em;right:2em;width:3em;height:3em;border-radius:50%;background:rgba(253, 248, 243, 0.95);border:1px solid #E8DFD6;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,0.06);display:flex;align-items:center;justify-content:center;font-size:0.9em;color:#8A7E72;opacity:0;transition:opacity 0.3s;z-index:100}
-.toc-panel{position:fixed;bottom:5.5em;right:2em;background:rgba(253, 248, 243, 0.95);border:1px solid #E8DFD6;border-radius:8px;padding:1em;width:220px;max-height:60vh;overflow-y:auto;box-shadow:0 4px 20px rgba(0,0,0,0.06);backdrop-filter:blur(10px);transition:all 0.15s ease-out;transform:translateY(8px) scale(0.97);opacity:0;visibility:hidden;z-index:99}
-.toc-panel a{transition:all 0.2s}
-.toc-panel a:hover,.toc-panel a.active{color:#3C3834!important;border-bottom-color:#C4B0A5!important;padding-left:0.5em!important}
-.toc-panel a.active{color:#C4B0A5!important}
-.toc-panel.open{opacity:1;visibility:visible;transform:translateY(0) scale(1)}
-#lightbox{display:none;position:fixed;inset:0;background:#FDF8F3;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);z-index:9999;align-items:center;justify-content:center}
-#lightbox img{max-width:95%;max-height:95%;border-radius:8px;object-fit:contain;display:block;margin:auto;box-shadow:0 8px 32px rgba(0,0,0,0.15)}
-#lightbox button{position:absolute;background:rgba(60,56,52,0.12);border:none;color:#3C3834;font-size:2.5em;padding:0.1em 0.4em;border-radius:50%;cursor:pointer;backdrop-filter:blur(4px);transition:background 0.2s}
-#lightbox button:hover{background:rgba(60,56,52,0.20)}
-#lightbox-prev{left:20px;top:50%;transform:translateY(-50%)}
-#lightbox-next{right:20px;top:50%;transform:translateY(-50%)}
-#lightbox-close{top:20px;right:25px;font-size:2.5em;background:none!important}
-#lightbox-close:hover{opacity:1}
-@media(max-width:768px){body,article,article p,main p,.code-block pre code{line-height:2.0!important}body,p,article p{letter-spacing:0.01em!important}article p{font-size:15px!important}blockquote p{font-size:15px!important}article h1{font-size:1.4em!important}}
-@media print{body{background:#fff!important}nav,footer,.toc-container,.back-top,.back-top-only,#lightbox{display:none}}</style>
+<title>谋欢</title>
+  <style>:root {
+  --bg: #F8F4EF;
+  --text: #2E2A26;
+  --text-muted: #7A6E62;
+  --border: #E8DFD6;
+  --border-quote: #BBA99A;
+  --accent: #B8A090;
+  --code-bg: #4A3F45;
+  --code-text: #E8E0E0;
+  --code-border: rgba(232, 223, 214, 0.3);
+  --inline-code-bg: #F0E8EC;
+  --inline-code-text: #5B3E6B;
+  --toc-bg: rgba(248, 244, 239, 0.95);
+  --image-placeholder: #C8C0B8;
+}
+
+* { box-sizing: border-box; margin: 0; }
+
+html { background: var(--bg); }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='1' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+  color: var(--text);
+  line-height: 1.9;
+  letter-spacing: 0.015em;
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 clamp(1em, 4vw, 2em);
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ===== 正文 ===== */
+article p {
+  line-height: 2;
+  letter-spacing: inherit;
+  font-size: clamp(16px, 2vw, 20px);
+  margin-bottom: 0.8em;
+  word-break: break-word;
+  text-align: justify;
+}
+article p img {
+  text-indent: 0;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ===== 链接 ===== */
+a { color: inherit; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ===== 图片容器 ===== */
+.img-wrapper {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin: 0.8em 0;
+  background-color: var(--image-placeholder);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.img-placeholder-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  color: var(--text-muted);
+  font-size: 0.85em;
+  font-family: monospace;
+  background-color: var(--image-placeholder);
+  background-image: linear-gradient(90deg, var(--image-placeholder) 0%, #D8D0C8 50%, var(--image-placeholder) 100%);
+  background-size: 200% 100%;
+  animation: shimmer 1.8s infinite;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1em;
+  text-align: center;
+  word-break: break-all;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.lightbox-img {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  position: relative;
+  z-index: 2;
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: attr(width) / attr(height);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.lightbox-img.loaded {
+  opacity: 1;
+}
+
+.lightbox-img.loaded + .img-placeholder-text {
+  display: none;
+}
+
+/* ===== 代码块 ===== */
+.code-block {
+  background: var(--code-bg);
+  border: 1px solid var(--code-border);
+}
+.code-block .copy-btn { opacity: 0; transition: opacity 0.2s; }
+.code-block:hover .copy-btn { opacity: 1; }
+.code-block pre code {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.85em;
+  line-height: 1.7;
+  color: var(--code-text);
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* ===== 行内代码 ===== */
+code {
+  background: var(--inline-code-bg) !important;
+  color: var(--inline-code-text) !important;
+  padding: 0.15em 0.4em !important;
+  border-radius: 4px !important;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace !important;
+  font-size: 0.9em !important;
+  word-break: break-word;
+}
+
+/* ===== 引用块 ===== */
+blockquote {
+  border-left: 4px solid var(--border-quote);
+  padding: 0.5em 1em;
+  margin: 1em 0;
+  background: rgba(201, 184, 168, 0.10);
+  border-radius: 0 4px 4px 0;
+  color: var(--text-muted);
+}
+blockquote p {
+  margin: 0.5em 0;
+  text-indent: 0;
+  font-size: inherit;
+  word-break: break-word;
+  text-align: justify;
+}
+
+/* ===== 删除线 ===== */
+del {
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+  color: inherit;
+  background: transparent;
+}
+
+/* ===== 列表 ===== */
+li p { text-indent: 0 !important; }
+
+/* ===== 折叠框 ===== */
+details {
+  background: rgba(60, 56, 52, 0.04);
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  padding: 0.8em 1.2em;
+  margin: 1.2em 0;
+}
+details summary {
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.2em 0;
+}
+details[open] summary { margin-bottom: 0.6em; }
+details p:last-child { margin-bottom: 0; }
+
+/* ===== 脚注 ===== */
+.footnotes {
+  border-top: 1px solid var(--border);
+  margin-top: 2em;
+  padding-top: 1em;
+}
+.footnotes h2 { display: none; }
+.footnotes .footnote-ref {
+  font-size: 0.75em;
+  vertical-align: super;
+}
+.footnotes ol {
+  list-style: decimal;
+  padding-left: 1.5em;
+  font-size: 0.9em;
+  color: var(--text-muted);
+}
+.footnotes ol li p {
+  display: inline;
+  font-size: 0.9em;
+}
+
+/* ===== 目录 & 返回顶部 ===== */
+.toc-container {
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6em;
+  z-index: 100;
+}
+.toc-btn, .back-top {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  background: var(--toc-bg);
+  border: 1px solid var(--border);
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9em;
+  color: var(--text-muted);
+}
+.toc-btn:hover, .back-top:hover, .back-top-only:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+}
+.back-top {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.back-top-only {
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  background: var(--toc-bg);
+  border: 1px solid var(--border);
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9em;
+  color: var(--text-muted);
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 100;
+}
+
+/* ===== 目录面板 ===== */
+.toc-panel {
+  position: fixed;
+  bottom: 5.5em;
+  right: 2em;
+  background: var(--toc-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1em;
+  width: 220px;
+  max-height: 60vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(10px);
+  transition: all 0.15s ease-out;
+  transform: translateY(8px) scale(0.97);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 99;
+}
+.toc-panel a {
+  transition: all 0.2s;
+}
+.toc-panel a:hover,
+.toc-panel a.active {
+  color: var(--text) !important;
+  border-bottom-color: var(--accent) !important;
+  padding-left: 0.5em !important;
+}
+.toc-panel a.active {
+  color: var(--accent) !important;
+}
+.toc-panel.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+}
+
+/* ===== 灯箱 ===== */
+#lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: var(--bg);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+}
+#lightbox img {
+  max-width: 95%;
+  max-height: 95%;
+  border-radius: 8px;
+  object-fit: contain;
+  display: block;
+  margin: auto;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+#lightbox button {
+  position: absolute;
+  background: rgba(60, 56, 52, 0.12);
+  border: none;
+  color: var(--text);
+  font-size: 2.5em;
+  padding: 0.1em 0.4em;
+  border-radius: 50%;
+  cursor: pointer;
+  backdrop-filter: blur(4px);
+  transition: background 0.2s;
+}
+#lightbox button:hover {
+  background: rgba(60, 56, 52, 0.20);
+}
+#lightbox-prev { left: 20px; top: 50%; transform: translateY(-50%); }
+#lightbox-next { right: 20px; top: 50%; transform: translateY(-50%); }
+#lightbox-close {
+  top: 20px;
+  right: 25px;
+  font-size: 2.5em;
+  background: none !important;
+}
+#lightbox-close:hover { opacity: 1; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 768px) {
+  body, article, article p, main p, .code-block pre code {
+    line-height: 2.0 !important;
+  }
+  body, p, article p {
+    letter-spacing: 0.015em !important;
+  }
+  article h1 {
+    font-size: 1.4em !important;
+  }
+}
+
+/* ===== 打印 ===== */
+@media print {
+  body {
+    background: #fff !important;
+    color: #000 !important;
+    font-size: 12pt;
+    line-height: 1.6;
+  }
+  article p {
+    font-size: 12pt;
+    text-align: left;
+  }
+  nav, footer, .toc-container, .back-top, .back-top-only, #lightbox {
+    display: none !important;
+  }
+  a {
+    color: #000 !important;
+    text-decoration: underline;
+  }
+  .back-home {
+    display: none !important;
+  }
+}</style>
 </head>
 <body>
   <nav style="display:flex;justify-content:space-between;align-items:center;padding:2em 0 0.2em 0;flex-wrap:wrap">
-      <div><a href="/" style="color:#3C3834;font-weight:700;font-size:1.8em;text-decoration:none">谋欢</a></div>
-      <div style="display:flex;flex-wrap:wrap">
-        <a href="/pages/" style="color:#8A7E72;margin-left:1.5em">Pages</a>
-        <a href="/atom.xml" style="color:#8A7E72;margin-left:1.5em">Feed</a>
-      </div>
-    </nav><div style="border-bottom:2px solid #E8DFD6;margin:0 0 1.5em 0"></div>
-  <main><div style="margin:2em 0;border-bottom:1px solid #E8DFD6;padding-bottom:1.2em">
-        <div style="color:#8A7E72;font-size:0.8em;letter-spacing:0.5px;margin-bottom:0.3em">2024-08-30</div>
-        <a href="/ting-ting-dian-le/" style="color:#3C3834;font-weight:600;font-size:1.15em;text-decoration:none;display:inline-block">听，停电了~</a>
-        <div style="color:#8A7E72;font-size:0.9em;margin-top:0.2em;padding-left:0.8em;border-left:2px solid #8A7E72">记一次难忘的停电经历。</div>
-      </div><div style="margin:2em 0;border-bottom:1px solid #E8DFD6;padding-bottom:1.2em">
-        <div style="color:#8A7E72;font-size:0.8em;letter-spacing:0.5px;margin-bottom:0.3em">2023-07-19</div>
-        <a href="/first-post/" style="color:#3C3834;font-weight:600;font-size:1.15em;text-decoration:none;display:inline-block">First Post</a>
-        <div style="color:#8A7E72;font-size:0.9em;margin-top:0.2em;padding-left:0.8em;border-left:2px solid #8A7E72">严格按标题来说应该是第一篇博文，不过……</div>
-      </div><div style="text-align:center;margin:3em 0"><a href="/" style="margin:0 0.5em;color:#8A7E72">1</a><span style="margin:0 0.5em;color:#3C3834">2</span></div></main>
-  <footer style="text-align:center;padding:1.5em 0;color:#8A7E72;font-size:0.8em">Copyright © 2026 · Powered by ♥️</footer><button class="back-top-only" onclick="scrollToTop()" title="按 T 键也可快速返回顶部哦！">↑</button>
-<div id="lightbox" style="display:none;position:fixed;inset:0;background:#FDF8F3;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);z-index:9999;align-items:center;justify-content:center">
-  <img id="lightbox-img" style="max-width:95%;max-height:95%;border-radius:8px;object-fit:contain;display:block;margin:auto;box-shadow:0 8px 32px rgba(0,0,0,0.15)" />
-  <button id="lightbox-prev" style="position:absolute;left:20px;top:50%;transform:translateY(-50%);background:rgba(60,56,52,0.12);border:none;color:#3C3834;font-size:2.5em;padding:0.1em 0.4em;border-radius:50%;cursor:pointer;display:none;backdrop-filter:blur(4px);transition:background 0.2s">‹</button>
-  <button id="lightbox-next" style="position:absolute;right:20px;top:50%;transform:translateY(-50%);background:rgba(60,56,52,0.12);border:none;color:#3C3834;font-size:2.5em;padding:0.1em 0.4em;border-radius:50%;cursor:pointer;display:none;backdrop-filter:blur(4px);transition:background 0.2s">›</button>
-  <button id="lightbox-close" style="position:absolute;top:20px;right:25px;background:none;border:none;color:#3C3834;font-size:2.5em;cursor:pointer;opacity:0.5">&times;</button>
-</div>
+    <div><a href="/" style="color:var(--text);font-weight:700;font-size:clamp(1.6em,4vw,2.2em);text-decoration:none">谋欢</a></div>
+    <div style="display:flex;flex-wrap:wrap;gap:clamp(0.8em,2vw,1.5em)">
+      <a href="/pages/" style="color:var(--text-muted)">Pages</a>
+      <a href="/atom.xml" style="color:var(--text-muted)">Feed</a>
+    </div>
+  </nav>
+  <div style="border-bottom:2px solid var(--border);margin:0 0 clamp(0.8em,2vw,1.5em) 0"></div>
+  <main><div style="margin:2em 0;border-bottom:1px solid var(--border);padding-bottom:1.2em">
+        <div style="color:var(--text-muted);font-size:0.8em;letter-spacing:0.5px;margin-bottom:0.3em">2024-08-30</div>
+        <a href="/ting-ting-dian-le/" style="color:var(--text);font-weight:600;font-size:clamp(1.1em,2.5vw,1.4em);text-decoration:none;display:inline-block">听，停电了~</a>
+        <div style="color:var(--text-muted);font-size:0.9em;margin-top:0.2em;padding-left:0.8em;border-left:2px solid var(--text-muted)">记一次难忘的停电经历。</div>
+      </div><div style="margin:2em 0;border-bottom:1px solid var(--border);padding-bottom:1.2em">
+        <div style="color:var(--text-muted);font-size:0.8em;letter-spacing:0.5px;margin-bottom:0.3em">2023-07-19</div>
+        <a href="/first-post/" style="color:var(--text);font-weight:600;font-size:clamp(1.1em,2.5vw,1.4em);text-decoration:none;display:inline-block">First Post</a>
+        <div style="color:var(--text-muted);font-size:0.9em;margin-top:0.2em;padding-left:0.8em;border-left:2px solid var(--text-muted)">严格按标题来说应该是第一篇博文，不过……</div>
+      </div><div style="text-align:center;margin:3em 0"><a href="/" style="margin:0 0.5em;color:var(--text-muted)">1</a><span style="margin:0 0.5em;color:var(--text)">2</span></div></main>
+  <footer style="text-align:center;padding:1.5em 0;color:var(--text-muted);font-size:0.8em">Copyright © 2026 · Powered by ♥️</footer>
+  <button class="back-top-only" onclick="scrollToTop()" title="按 T 键也可快速返回顶部哦！">↑</button>
+  <div id="lightbox" style="display:none;position:fixed;inset:0;background:var(--bg);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);z-index:9999;align-items:center;justify-content:center">
+    <img id="lightbox-img" style="max-width:95%;max-height:95%;border-radius:8px;object-fit:contain;display:block;margin:auto;box-shadow:0 8px 32px rgba(0,0,0,0.15)" />
+    <button id="lightbox-prev" style="position:absolute;left:20px;top:50%;transform:translateY(-50%);background:rgba(60,56,52,0.12);border:none;color:var(--text);font-size:2.5em;padding:0.1em 0.4em;border-radius:50%;cursor:pointer;display:none;backdrop-filter:blur(4px);transition:background 0.2s">‹</button>
+    <button id="lightbox-next" style="position:absolute;right:20px;top:50%;transform:translateY(-50%);background:rgba(60,56,52,0.12);border:none;color:var(--text);font-size:2.5em;padding:0.1em 0.4em;border-radius:50%;cursor:pointer;display:none;backdrop-filter:blur(4px);transition:background 0.2s">›</button>
+    <button id="lightbox-close" style="position:absolute;top:20px;right:25px;background:none;border:none;color:var(--text);font-size:2.5em;cursor:pointer;opacity:0.5">&times;</button>
+  </div>
   <script>
-let lightboxImages=[],currentIndex=0;
-const lb=document.getElementById('lightbox'),lbImg=document.getElementById('lightbox-img'),lbPrev=document.getElementById('lightbox-prev'),lbNext=document.getElementById('lightbox-next'),lbClose=document.getElementById('lightbox-close');
-function openLightbox(i){currentIndex=i;lbImg.src=lightboxImages[currentIndex];lb.style.display='flex';lbPrev.style.display=lightboxImages.length>1?'block':'none';lbNext.style.display=lightboxImages.length>1?'block':'none';document.body.style.overflow='hidden'}
-function closeLightbox(e){if(e&&e.target&&e.target!==e.currentTarget&&e.target!==lbClose)return;lb.style.display='none';document.body.style.overflow=''}
-function prevImage(e){e.stopPropagation();if(lightboxImages.length<=1)return;currentIndex=(currentIndex-1+lightboxImages.length)%lightboxImages.length;lbImg.src=lightboxImages[currentIndex]}
-function nextImage(e){e.stopPropagation();if(lightboxImages.length<=1)return;currentIndex=(currentIndex+1)%lightboxImages.length;lbImg.src=lightboxImages[currentIndex]}
-lbPrev.onclick=prevImage;lbNext.onclick=nextImage;lbClose.onclick=closeLightbox;lb.onclick=closeLightbox;
-document.addEventListener('keydown',function(e){if(lb.style.display==='flex'){if(e.key==='Escape'){lb.style.display='none';document.body.style.overflow=''}if(e.key==='ArrowLeft'&&lightboxImages.length>1){e.preventDefault();prevImage(e)}if(e.key==='ArrowRight'&&lightboxImages.length>1){e.preventDefault();nextImage(e)}}});
-document.addEventListener('DOMContentLoaded',function(){const imgs=document.querySelectorAll('.lightbox-img');lightboxImages=Array.from(imgs).map(img=>img.src);imgs.forEach((img,idx)=>{img.onclick=function(){openLightbox(idx)}})});
-function toggleToc(){const p=document.querySelector('.toc-panel'),b=document.querySelector('.toc-btn');if(p){p.classList.toggle('open');if(b){b.style.transform=p.classList.contains('open')?'rotate(90deg)':'rotate(0deg)'}}}
-function closeToc(){const p=document.querySelector('.toc-panel'),b=document.querySelector('.toc-btn');if(p){p.classList.remove('open');if(b){b.style.transform='rotate(0deg)'}}}
-document.addEventListener('click',e=>{if(!e.target.closest('.toc-container')&&!e.target.closest('.toc-panel')){closeToc()}});
-const backTop=document.querySelector('.back-top')||document.querySelector('.back-top-only');
-function scrollToTop(){window.scrollTo({top:0,behavior:'smooth'})}
-window.addEventListener('scroll',()=>{if(backTop){backTop.style.opacity=window.scrollY>500?'1':'0'}});
-document.addEventListener('keydown',e=>{if(e.key==='t'&&!e.ctrlKey&&!e.metaKey&&!e.altKey&&!e.shiftKey){e.preventDefault();scrollToTop()}});
-window.addEventListener('scroll',()=>{const links=document.querySelectorAll('.toc-panel a');if(!links.length)return;const headers=document.querySelectorAll('h2, h3');let current='';for(const h of headers){if(h.getBoundingClientRect().top>=0){current=h.id;break}}links.forEach(a=>{a.classList.toggle('active',a.dataset.target===current)})});
-let copyTimer=null;
-function copyCode(btn,id){const code=document.getElementById(id).innerText;navigator.clipboard.writeText(code).then(()=>{const svg=btn.querySelector('svg');if(!svg)return;if(!btn.dataset.original){btn.dataset.original=svg.outerHTML}svg.outerHTML='<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>';if(copyTimer)clearTimeout(copyTimer);copyTimer=setTimeout(()=>{const el=btn.querySelector('svg');if(el&&btn.dataset.original){el.outerHTML=btn.dataset.original}copyTimer=null},1500)})}
-if(document.querySelector('article h1')){const t=document.querySelector('article h1');window.scrollTo({top:t.getBoundingClientRect().top+window.scrollY-10,behavior:'instant'})}</script>
+// ===== 图片加载 =====
+document.addEventListener('DOMContentLoaded', function() {
+  const wrappers = document.querySelectorAll('.img-wrapper');
+
+  wrappers.forEach(function(wrapper) {
+    const img = wrapper.querySelector('.lightbox-img');
+    const placeholder = wrapper.querySelector('.img-placeholder-text');
+
+    if (!img || !placeholder) return;
+
+    var startTime = Date.now();
+
+    // 如果图片已缓存且加载成功
+    if (img.complete && img.naturalWidth > 0) {
+      var elapsed = Date.now() - startTime;
+      var delay = Math.max(0, 300 - elapsed);
+      setTimeout(function() {
+        img.classList.add('loaded');
+      }, delay);
+      return;
+    }
+
+    // 加载成功
+    img.addEventListener('load', function() {
+      var elapsed = Date.now() - startTime;
+      var delay = Math.max(0, 300 - elapsed);
+      setTimeout(function() {
+        img.classList.add('loaded');
+      }, delay);
+    });
+
+    // 加载失败：保留占位，显示 alt 文字
+    img.addEventListener('error', function() {
+      placeholder.style.backgroundImage = 'none';
+      placeholder.style.animation = 'none';
+      placeholder.style.backgroundColor = 'var(--image-placeholder)';
+    });
+
+    // 超时逻辑：10 秒后如果还没加载完成，显示文件名
+    var timeout = setTimeout(function() {
+      if (!img.classList.contains('loaded')) {
+        placeholder.style.backgroundImage = 'none';
+        placeholder.style.animation = 'none';
+        placeholder.style.backgroundColor = 'var(--image-placeholder)';
+        if (!placeholder.textContent.trim()) {
+          var altText = img.alt || img.src.split('/').pop() || '图片';
+          placeholder.textContent = altText;
+        }
+      }
+    }, 10000);
+
+    img.addEventListener('load', function() {
+      clearTimeout(timeout);
+    });
+  });
+});
+
+// ===== 灯箱 =====
+let lightboxImages = [];
+let currentIndex = 0;
+
+const lb = document.getElementById('lightbox');
+const lbImg = document.getElementById('lightbox-img');
+const lbPrev = document.getElementById('lightbox-prev');
+const lbNext = document.getElementById('lightbox-next');
+const lbClose = document.getElementById('lightbox-close');
+
+function openLightbox(index) {
+  currentIndex = index;
+  lbImg.src = lightboxImages[currentIndex];
+  lb.style.display = 'flex';
+  lbPrev.style.display = lightboxImages.length > 1 ? 'block' : 'none';
+  lbNext.style.display = lightboxImages.length > 1 ? 'block' : 'none';
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox(e) {
+  if (e && e.target && e.target !== e.currentTarget && e.target !== lbClose) return;
+  lb.style.display = 'none';
+  document.body.style.overflow = '';
+}
+
+function prevImage(e) {
+  e.stopPropagation();
+  if (lightboxImages.length <= 1) return;
+  currentIndex = (currentIndex - 1 + lightboxImages.length) % lightboxImages.length;
+  lbImg.src = lightboxImages[currentIndex];
+}
+
+function nextImage(e) {
+  e.stopPropagation();
+  if (lightboxImages.length <= 1) return;
+  currentIndex = (currentIndex + 1) % lightboxImages.length;
+  lbImg.src = lightboxImages[currentIndex];
+}
+
+lbPrev.onclick = prevImage;
+lbNext.onclick = nextImage;
+lbClose.onclick = closeLightbox;
+lb.onclick = closeLightbox;
+
+document.addEventListener('keydown', function(e) {
+  if (lb.style.display === 'flex') {
+    if (e.key === 'Escape') {
+      lb.style.display = 'none';
+      document.body.style.overflow = '';
+    }
+    if (e.key === 'ArrowLeft' && lightboxImages.length > 1) {
+      e.preventDefault();
+      prevImage(e);
+    }
+    if (e.key === 'ArrowRight' && lightboxImages.length > 1) {
+      e.preventDefault();
+      nextImage(e);
+    }
+  }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  const imgs = document.querySelectorAll('.lightbox-img');
+  lightboxImages = Array.from(imgs).map(function(img) {
+    return img.src;
+  });
+  imgs.forEach(function(img, idx) {
+    img.onclick = function() {
+      openLightbox(idx);
+    };
+  });
+});
+
+// ===== 目录 =====
+function toggleToc() {
+  const p = document.querySelector('.toc-panel');
+  const b = document.querySelector('.toc-btn');
+  if (p) {
+    p.classList.toggle('open');
+    if (b) {
+      b.style.transform = p.classList.contains('open') ? 'rotate(90deg)' : 'rotate(0deg)';
+    }
+  }
+}
+
+function closeToc() {
+  const p = document.querySelector('.toc-panel');
+  const b = document.querySelector('.toc-btn');
+  if (p) {
+    p.classList.remove('open');
+    if (b) {
+      b.style.transform = 'rotate(0deg)';
+    }
+  }
+}
+
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.toc-container') && !e.target.closest('.toc-panel')) {
+    closeToc();
+  }
+});
+
+// ===== 返回顶部 =====
+const backTop = document.querySelector('.back-top') || document.querySelector('.back-top-only');
+
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+window.addEventListener('scroll', function() {
+  if (backTop) {
+    backTop.style.opacity = window.scrollY > 500 ? '1' : '0';
+  }
+});
+
+document.addEventListener('keydown', function(e) {
+  if (e.key === 't' && !e.ctrlKey && !e.metaKey && !e.altKey && !e.shiftKey) {
+    e.preventDefault();
+    scrollToTop();
+  }
+});
+
+// ===== 目录激活状态 =====
+window.addEventListener('scroll', function() {
+  const links = document.querySelectorAll('.toc-panel a');
+  if (!links.length) return;
+
+  const headers = document.querySelectorAll('h2, h3');
+  let current = '';
+  for (const h of headers) {
+    if (h.getBoundingClientRect().top >= 0) {
+      current = h.id;
+      break;
+    }
+  }
+
+  links.forEach(function(a) {
+    a.classList.toggle('active', a.dataset.target === current);
+  });
+});
+
+// ===== 复制代码 =====
+let copyTimer = null;
+
+function copyCode(btn, id) {
+  const code = document.getElementById(id).innerText;
+
+  navigator.clipboard.writeText(code).then(function() {
+    const svg = btn.querySelector('svg');
+    if (!svg) return;
+
+    if (!btn.dataset.original) {
+      btn.dataset.original = svg.outerHTML;
+    }
+
+    svg.outerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>';
+
+    if (copyTimer) clearTimeout(copyTimer);
+    copyTimer = setTimeout(function() {
+      const el = btn.querySelector('svg');
+      if (el && btn.dataset.original) {
+        el.outerHTML = btn.dataset.original;
+      }
+      copyTimer = null;
+    }, 1500);
+  });
+}
+
+// ===== 文章滚动 =====
+if (document.querySelector('article h1')) {
+  const t = document.querySelector('article h1');
+  window.scrollTo({
+    top: t.getBoundingClientRect().top + window.scrollY - 10,
+    behavior: 'instant'
+  });
+}</script>
 </body>
 </html>
