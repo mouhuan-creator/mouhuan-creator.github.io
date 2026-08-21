@@ -48,11 +48,44 @@ body {
   margin: 0 auto;
   padding: 0 clamp(1em, 4vw, 2em);
   animation: fadeIn 0.3s ease-out;
+  cursor: grab;
 }
 
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
+}
+
+/* ===== 可交互元素：标准鼠标 ===== */
+a,
+button,
+.toc-btn,
+.back-top,
+.back-top-only,
+.copy-btn,
+.back-home,
+.thoughts-entry,
+.thoughts-entry *,
+.post-item a,
+nav a,
+nav *,
+footer a,
+.pagination a {
+  cursor: default !important;
+}
+
+/* ===== 脚注：问号 + 视觉反馈 ===== */
+a[data-footnote-ref] {
+  cursor: help !important;
+  border-bottom: 1px dotted var(--text-muted);
+  padding-bottom: 1px;
+  transition: all 0.15s;
+  color: var(--text);
+  text-decoration: none;
+}
+a[data-footnote-ref]:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
 }
 
 /* ===== 正文 ===== */
@@ -203,7 +236,7 @@ details summary {
 details[open] summary { margin-bottom: 0.6em; }
 details p:last-child { margin-bottom: 0; }
 
-/* ===== 脚注 ===== */
+/* ===== 脚注列表 ===== */
 .footnotes {
   border-top: 1px solid var(--border);
   margin-top: 2em;
@@ -409,7 +442,7 @@ details p:last-child { margin-bottom: 0; }
     </div>
   </nav>
   <div style="border-bottom:2px solid var(--border);margin:0 0 clamp(0.8em,2vw,1.5em) 0"></div>
-  <main><article><h1 style="font-size:clamp(1.6em,3.5vw,2.4em);margin-bottom:0.2em">关于</h1><div style="color:var(--text-muted);font-size:0.9em;margin-top:0.3em;margin-bottom:0.3em">2024-07-08 · 3056字符</div><div style="color:var(--text-muted);font-size:0.9em;margin-top:-0.2em;margin-bottom:0.5em">最后编辑：2026-08-13</div><h1><strong>关于</strong><sup><a href="#user-content-fn-more-info" id="user-content-fnref-more-info" data-footnote-ref="" aria-describedby="footnote-label">1</a></sup></h1>
+  <main><article><h1 style="font-size:clamp(1.6em,3.5vw,2.4em);margin-bottom:0.2em">关于</h1><div style="color:var(--text-muted);font-size:0.9em;margin-top:0.3em;margin-bottom:0.3em">2024-07-08 · 3027字符</div><div style="color:var(--text-muted);font-size:0.9em;margin-top:-0.2em;margin-bottom:0.5em">最后编辑：2026-08-21</div><h1><strong>关于</strong><sup><a href="#user-content-fn-more-info" id="user-content-fnref-more-info" data-footnote-ref="" aria-describedby="footnote-label">1</a></sup></h1>
 <hr />
 <h2 id="前引">前引</h2>
 <p>如果让我来解释<code>谋欢</code>的意思的话，大概会是这样的：</p>
@@ -485,7 +518,7 @@ Mastodon: <code>@sad@c7.io</code>，我的碎碎念<br />
 <p>DNS：<a href="https://cloudflare.com" style="color:var(--text);text-decoration:none;background:linear-gradient(to top, #B5D8EB 40%, transparent 40%)" target="_blank" rel="noopener noreferrer">Cloudflare</a></p>
 <p>邮件：暂无域名邮箱</p>
 <p>图床：<a href="https://s.ee" style="color:var(--text);text-decoration:none;background:linear-gradient(to top, #B5D8EB 40%, transparent 40%)" target="_blank" rel="noopener noreferrer">S.EE</a></p>
-<p>Emoji：<a href="https://emojispark.com/" style="color:var(--text);text-decoration:none;background:linear-gradient(to top, #B5D8EB 40%, transparent 40%)" target="_blank" rel="noopener noreferrer">Emoji Spark</a></p>
+<p>Emoji：<a href="https://manysmile.art/" style="color:var(--text);text-decoration:none;background:linear-gradient(to top, #B5D8EB 40%, transparent 40%)" target="_blank" rel="noopener noreferrer">Many Smile</a></p>
 <h2 id="隐私政策">隐私政策</h2>
 <p>详见<a href="/privacy-policy" style="color:var(--text);text-decoration:none;background:linear-gradient(to top, #FFE8A0 40%, transparent 40%)">隐私政策</a>页面。</p>
 <h2 id="【谋欢】版权©-2026">【谋欢】版权© 2026</h2>
@@ -495,12 +528,10 @@ Mastodon: <code>@sad@c7.io</code>，我的碎碎念<br />
 <p>禁止转载至微信公众号、知乎等非开放性平台。</p>
 <p>本站LOGO由 AI 生成，经本人二次创作后发布。保留所有权利；未经许可，禁止转载、商业使用或衍生发行。</p>
 <p>本站所使用的静态博客生成器XING为私有，版权归属本站。</p>
-<hr />
-<p>最后编辑于26-07-20，疯狂测试处理新博客程序排版问题中……</p>
 <section data-footnotes="" class="footnotes">
 <ol>
 <li id="user-content-fn-more-info">
-<p>更多信息可以移步<a href="/first-post" style="color:var(--text);text-decoration:none;background:linear-gradient(to top, #FFE8A0 40%, transparent 40%)">First Post</a>，站点相关可以看看<a href="/xing" style="color:var(--text);text-decoration:none;background:linear-gradient(to top, #FFE8A0 40%, transparent 40%)">XING</a>。 <a href="#user-content-fnref-more-info" data-footnote-backref="" aria-label="Back to reference 1" class="data-footnote-backref">↩</a></p>
+<p>更多信息可以移步<a href="/first-post" style="color:var(--text);text-decoration:none;background:linear-gradient(to top, #FFE8A0 40%, transparent 40%)">First Post</a>，站点相关可以看看<a href="/xing" style="color:var(--text);text-decoration:none;background:linear-gradient(to top, #FFE8A0 40%, transparent 40%)">XING</a>和<a href="/site-history" style="color:var(--text);text-decoration:none;background:linear-gradient(to top, #FFE8A0 40%, transparent 40%)">站点历史</a>。 <a href="#user-content-fnref-more-info" data-footnote-backref="" aria-label="Back to reference 1" class="data-footnote-backref">↩</a></p>
 </li>
 <li id="user-content-fn-yi-han">
 <p>也许还可以再加上一个兵荒马乱的遗憾。 <a href="#user-content-fnref-yi-han" data-footnote-backref="" aria-label="Back to reference 2" class="data-footnote-backref">↩</a></p>

@@ -48,11 +48,44 @@ body {
   margin: 0 auto;
   padding: 0 clamp(1em, 4vw, 2em);
   animation: fadeIn 0.3s ease-out;
+  cursor: grab;
 }
 
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
+}
+
+/* ===== 可交互元素：标准鼠标 ===== */
+a,
+button,
+.toc-btn,
+.back-top,
+.back-top-only,
+.copy-btn,
+.back-home,
+.thoughts-entry,
+.thoughts-entry *,
+.post-item a,
+nav a,
+nav *,
+footer a,
+.pagination a {
+  cursor: default !important;
+}
+
+/* ===== 脚注：问号 + 视觉反馈 ===== */
+a[data-footnote-ref] {
+  cursor: help !important;
+  border-bottom: 1px dotted var(--text-muted);
+  padding-bottom: 1px;
+  transition: all 0.15s;
+  color: var(--text);
+  text-decoration: none;
+}
+a[data-footnote-ref]:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
 }
 
 /* ===== 正文 ===== */
@@ -203,7 +236,7 @@ details summary {
 details[open] summary { margin-bottom: 0.6em; }
 details p:last-child { margin-bottom: 0; }
 
-/* ===== 脚注 ===== */
+/* ===== 脚注列表 ===== */
 .footnotes {
   border-top: 1px solid var(--border);
   margin-top: 2em;
