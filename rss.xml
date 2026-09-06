@@ -5,8 +5,15 @@
     <link>https://www.mouhuan.com/</link>
     <description>谋求片刻欢愉。</description>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 31 Aug 2026 09:41:30 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 06 Sep 2026 02:11:16 GMT</lastBuildDate>
     <atom:link href="https://www.mouhuan.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>八月二十日出行小记</title>
+      <link>https://www.mouhuan.com/2026-08-20-chu-xing-xiao-ji/</link>
+      <pubDate>Sun, 06 Sep 2026 00:00:00 GMT</pubDate>
+      <guid>https://www.mouhuan.com/2026-08-20-chu-xing-xiao-ji/</guid>
+      <description>谨以此文记录这次出行之旅，虽然拖了两个周才写完。 最终还是定下了日期 现在的我处于学生时代里可能是唯一的三个月长假中，玩耍时长理应与假期时长成正比，但出于各种难以言说的、让我头疼的、兼有可逆与不可逆的原因，在已经溜走了一月多的假期时光里，我竟从未出游过，一直窝在家里。为数不多的几次出门，还是去学校领...</description>
+    </item>
     <item>
       <title>新卡</title>
       <link>https://www.mouhuan.com/liu-liang-ka/</link>
@@ -34,13 +41,6 @@
       <pubDate>Sat, 31 May 2025 00:00:00 GMT</pubDate>
       <guid>https://www.mouhuan.com/2025-05-monthly-duan-wu-an-kang/</guid>
       <description>这个月学校大量调休，导致连着三个星期单休，好不容易端午能放三天假。 月初在简笔记（补充：现在更换到Gmeek了）开通了这个博客，可一直没有时间更新，实在是惭愧呀！趁着端午，多写下点什么。 有个我一直信奉的一个道理： 写作要勤快些，要多写，要逼着自己去写。 域名转移注册商 在聚名拿下了这个域名之后，又...</description>
-    </item>
-    <item>
-      <title>为账号上把“锁”</title>
-      <link>https://www.mouhuan.com/locked-for-security/</link>
-      <pubDate>Fri, 30 Aug 2024 00:00:00 GMT</pubDate>
-      <guid>https://www.mouhuan.com/locked-for-security/</guid>
-      <description>更换密码 前言 之前我为了图省事，很多社交平台的账号名和密码都是用的同一套模板，只是在它的基础上改动一两个字符罢了。 比方说我的密码模板是zhangsan6666，那么我的某信密码大概就是zhangsan7777这样的形式。 所以说只要有人知道了我的任意一个平台的密码，那么他也许能很轻易的破解我的“...</description>
     </item>
   </channel>
 </rss>
