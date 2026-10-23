@@ -25,7 +25,7 @@
   </div>
 </nav>
 <div style="border-bottom:1px solid var(--border);margin-bottom:1.5em"></div>
-<main><article><h1 style="font-size:clamp(1.8em,4.5vw,2.4em);line-height:1.3;font-weight:700;margin-bottom:0.2em">NothingHere</h1><div style="color:var(--text-muted);font-size:0.9em;margin-top:0.3em;margin-bottom:0.3em">2026-09-30 · 2411字符</div><div class="post-content"><h2 id="nothinghere">NothingHere</h2>
+<main><article><h1 style="font-size:clamp(1.8em,4.5vw,2.4em);line-height:1.3;font-weight:700;margin-bottom:0.2em">NothingHere</h1><div style="color:var(--text-muted);font-size:0.9em;margin-top:0.3em;margin-bottom:0.3em">2026-09-30 · 2416字符</div><div class="post-content"><h2 id="nothinghere">NothingHere</h2>
 <p><code>NothingHere</code>是<code>XING</code>的Astro的移植主题。</p>
 <p>从22年开始，折腾了好几个博客，也因此用过了几个博客程序（见<a href="/history">站点历史</a>），可用来用去总觉得哪里不合适，比方说功能太多太臃肿，程序过于复杂对我这种代码小白不够友好，有些程序如麻雀般虽小巧但也五脏俱全，可惜却没有长期维护下去，正好AI这几年发展势头汹涌，我觉得是时候给自己整个程序了。于是在高三后的暑假，我开始用AI来写一个对我而言，简单、够用，的博客程序，也就是XING<sup><a href="#user-content-fn-why-static" id="user-content-fnref-why-static" data-footnote-ref="" aria-describedby="footnote-label">1</a></sup>。</p>
 <p>然后经过与AI长期的对线，大概在八月的时候，XING生出来了。彼时的我自然很开心，在看不懂代码的情况下，通过自然语言的叙述，一个简陋的静态博客生成框架就这么出现在眼前了，我忽而感到如梦一场。</p>
@@ -36,9 +36,9 @@
 <p><code>XING</code>是本站所使用的静态博客生成器的名称，实际上可以看作一个没有声调的拼音，可译为<code>星</code>、<code>行</code>、<code>醒</code>等字。至于这个玩意儿……是我用<del>指使</del>AI（前期是Kimi，后期是Deepseek）搓出来的一套自用的从.md文件到.html的静态博客生成方案。</p>
 <p>不过也是极其粗糙的一个作品，目前还处于调试阶段……所以出现什么故障都是有可能的，一直处于修修补补的状态。</p>
 <p>至于为什么不使用Hexo、Hugo等成熟的静态博客生成器，其实一开始我有认真考虑过，但在打开它们的文档后失望的退出来了……太复杂了……我只是想要一个简单易用可定制的博客生成方案，并不想为那些总也用不到的功能额外增加我的学习。</p>
-<h2 id="工作原理建议宽屏设备上看">工作原理（建议宽屏设备上看）</h2>
+<h3 id="工作原理xing建议宽屏设备上看">工作原理（XING，建议宽屏设备上看）</h3>
 <p>我本地存放的目录层级：</p>
-<div class="code-block"><div class="code-header"><button class="copy-btn" data-target="code-o8t8gsk57" type="button" title="复制代码"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></button></div><pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext" id="code-o8t8gsk57"><code><span class="line"><span>项目根目录</span></span>
+<div class="code-block"><div class="code-header"><button class="copy-btn" data-target="code-dntqi81yg" type="button" title="复制代码"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></button></div><pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext" id="code-dntqi81yg"><code><span class="line"><span>项目根目录</span></span>
 <span class="line"><span>├── 源码层(写死的)</span></span>
 <span class="line"><span>│   ├── build.js        → 真正的核心</span></span>
 <span class="line"><span>│   ├── posts/          → 被 build.js 读取，生成.html</span></span>
@@ -66,7 +66,7 @@
 <p>写作完保存至本地，在根目录运行<code>cmd</code>》<code>node build.js</code>》拖拽到Github，完成部署。</p>
 </li>
 </ol>
-<h2 id="特性">特性</h2>
+<h3 id="特性xing">特性（XING）</h3>
 <ul>
 <li>
 <p>无服务器化设计，任何支持静态网站的平台都可以拖拽式部署。</p>
