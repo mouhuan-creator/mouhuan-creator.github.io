@@ -1,0 +1,138 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><meta name="referrer" content="no-referrer"><meta name="description" content="谋求片刻欢愉。"><link rel="icon" href="https://files.seeusercontent.com/2026/08/18/Lj8k/avatar.ico" sizes="any"><link rel="alternate" type="application/atom+xml" title="Atom Feed" href="https://mouhuan-creator.github.io/atom.xml"><meta property="og:title" content="NothingHere · 谋欢"><meta property="og:description" content="谋求片刻欢愉。"><meta property="og:type" content="article"><meta property="og:url" content="https://mouhuan-creator.github.io/nothinghere/"><meta property="og:image" content="https://files.seeusercontent.com/2026/08/18/Lj8k/avatar.ico"><meta property="og:site_name" content="谋欢"><title>NothingHere · 谋欢</title><style>
+  :root {
+    --bg: #FCFCFA;
+    --text: #1F2328;
+    --text-muted: #5E6468;
+    --border: #DCE0DA;
+    --border-quote: #7B9A9E;
+    --accent: #2E4A62;
+    --code-bg: #EEF1EE;
+    --code-text: #1F2328;
+    --code-border: #DCE0DA;
+    --inline-code-bg: #E6DCE8;
+    --highlight-internal: #D4E4C8;
+    --highlight-external: #B5CDD9;
+    --toc-bg: rgba(252, 252, 250, 0.95);
+    --image-placeholder: #DEE2DC;
+    --footnote-color: #5A7A80;
+  }
+</style><link rel="stylesheet" href="/_astro/BaseLayout.ChrdyFZE.css"></head><body><div class="reading-progress" id="reading-progress"></div>
+<nav style="display:flex;justify-content:space-between;align-items:center;padding:1em 0 0.8em 0;font-size:0.85em;color:var(--text-muted)">
+  <a href="/" style="color:var(--text-muted);text-decoration:none">← 返回首页</a>
+  <div style="display:flex;gap:1.2em">
+    <a href="/pages/" style="color:var(--text-muted);text-decoration:none">Pages</a>
+    <a href="/atom.xml" style="color:var(--text-muted);text-decoration:none">Feed</a>
+  </div>
+</nav>
+<div style="border-bottom:1px solid var(--border);margin-bottom:1.5em"></div>
+<main><article><h1 style="font-size:clamp(1.8em,4.5vw,2.4em);line-height:1.3;font-weight:700;margin-bottom:0.2em">NothingHere</h1><div style="color:var(--text-muted);font-size:0.9em;margin-top:0.3em;margin-bottom:0.3em">2026-09-30 · 2411字符</div><div class="post-content"><h2 id="nothinghere">NothingHere</h2>
+<p><code>NothingHere</code>是<code>XING</code>的Astro的移植主题。</p>
+<p>从22年开始，折腾了好几个博客，也因此用过了几个博客程序（见<a href="/history">站点历史</a>），可用来用去总觉得哪里不合适，比方说功能太多太臃肿，程序过于复杂对我这种代码小白不够友好，有些程序如麻雀般虽小巧但也五脏俱全，可惜却没有长期维护下去，正好AI这几年发展势头汹涌，我觉得是时候给自己整个程序了。于是在高三后的暑假，我开始用AI来写一个对我而言，简单、够用，的博客程序，也就是XING<sup><a href="#user-content-fn-why-static" id="user-content-fnref-why-static" data-footnote-ref="" aria-describedby="footnote-label">1</a></sup>。</p>
+<p>然后经过与AI长期的对线，大概在八月的时候，XING生出来了。彼时的我自然很开心，在看不懂代码的情况下，通过自然语言的叙述，一个简陋的静态博客生成框架就这么出现在眼前了，我忽而感到如梦一场。</p>
+<p>但其实从下面的旧版介绍存档可以看出，这个搓出来的静态博客生成器用倒是能用，但各种小问题太多了：因为是纯手搓的，字距处理、md渲染、页面自适应等等，都是用最原始的方法，一行一行代码写出来的，实现效果肯定不如成熟的项目好，尽管它具有占用极小（整个文件夹，包含源码和文件，也才几mb）、完全无多余功能的特性，我还是打算弃用，移植其为Astro的一个主题。</p>
+<p>因为有了XING，移植到Astro就容易许多了，主题样式是现成的，把文章渲染交给AStro处理，又修改了若干小细节（也见站点历史），这个主题就算是成形了。</p>
+<p>至于为什么是移植到Astro而不是其他的成熟框架，我也说不上来，大概是因为恰好看到了觉得还不错吧。</p>
+<h2 id="xing存档">XING?（存档）</h2>
+<p><code>XING</code>是本站所使用的静态博客生成器的名称，实际上可以看作一个没有声调的拼音，可译为<code>星</code>、<code>行</code>、<code>醒</code>等字。至于这个玩意儿……是我用<del>指使</del>AI（前期是Kimi，后期是Deepseek）搓出来的一套自用的从.md文件到.html的静态博客生成方案。</p>
+<p>不过也是极其粗糙的一个作品，目前还处于调试阶段……所以出现什么故障都是有可能的，一直处于修修补补的状态。</p>
+<p>至于为什么不使用Hexo、Hugo等成熟的静态博客生成器，其实一开始我有认真考虑过，但在打开它们的文档后失望的退出来了……太复杂了……我只是想要一个简单易用可定制的博客生成方案，并不想为那些总也用不到的功能额外增加我的学习。</p>
+<h2 id="工作原理建议宽屏设备上看">工作原理（建议宽屏设备上看）</h2>
+<p>我本地存放的目录层级：</p>
+<div class="code-block"><div class="code-header"><button class="copy-btn" data-target="code-o8t8gsk57" type="button" title="复制代码"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></button></div><pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext" id="code-o8t8gsk57"><code><span class="line"><span>项目根目录</span></span>
+<span class="line"><span>├── 源码层(写死的)</span></span>
+<span class="line"><span>│   ├── build.js        → 真正的核心</span></span>
+<span class="line"><span>│   ├── posts/          → 被 build.js 读取，生成.html</span></span>
+<span class="line"><span>│   └── static/         → 被 build.js 复制到dist中，放文件的地方</span></span>
+<span class="line"><span>│</span></span>
+<span class="line"><span>├── 构建层（自动生成）</span></span>
+<span class="line"><span>│   └── dist/           → 包含以下内容</span></span>
+<span class="line"><span>│       ├── index.html  ← 来自 posts/*.md</span></span>
+<span class="line"><span>│       ├── *.html     ← 来自 posts/*.md</span></span>
+<span class="line"><span>│       ├── pages/      ← 来自 posts/pages.md（该页面写死在导航栏中）</span></span>
+<span class="line"><span>│       ├── *.xml/json  ← 来自 build.js 生成（同时包含RSS、ATOM和JSON Feed）</span></span>
+<span class="line"><span>│       └── *.asc/*.ico ← 来自 static/</span></span>
+<span class="line"><span>│</span></span>
+<span class="line"><span>└── 部署层</span></span>
+<span class="line"><span>    └── dist/ 的内容 → 上传至 Github Pages，部署到网站上</span></span></code></pre></div>
+<p>这套方案的主要工作原理（参照上表，根据我的理解）：</p>
+<ol>
+<li>
+<p>写作，我比较习惯用Markdown（解析库用micromark+micromark extension gfm）来码字，所以这也是这套方案设计的起点。</p>
+</li>
+<li>
+<p>把.md文件放到posts文件夹里，静态文件放在static文件夹中，图片用外链（直接放到Github上国内加载太慢了）。</p>
+</li>
+<li>
+<p>写作完保存至本地，在根目录运行<code>cmd</code>》<code>node build.js</code>》拖拽到Github，完成部署。</p>
+</li>
+</ol>
+<h2 id="特性">特性</h2>
+<ul>
+<li>
+<p>无服务器化设计，任何支持静态网站的平台都可以拖拽式部署。</p>
+</li>
+<li>
+<p>极简设计<del>简陋，并且有时候显示效果还不太合理；有AI风味；部分功能半残</del>，没有让人眼花缭乱的动效<del>才不是因为我不会写呢</del>。</p>
+</li>
+<li>
+<p>（对于我）没有冗余功能，所有的设计都是因需求而生。</p>
+</li>
+<li>
+<p>可以使用markdown写作，更顺手。</p>
+</li>
+<li>
+<p>每次发布/修改都要打开电脑（严重缺点，尤其是每次刚发布完结果又发现有错别字时）</p>
+</li>
+<li>
+<p><del>使用surge部署，因为surge免费版没有自定义域的SSL功能，所以临时使用cf来套用CDN，导致在国内访问效果“喜人”😢（不过还是略强于surge）。日后可能考虑用cf优选或者别的什么解决方案。</del>已换回Github Pages，虽然surge.sh确实对于我来说使用更加跟手。</p>
+</li>
+<li>
+<p>除图床外没有外部依赖，隐私更友好。</p>
+</li>
+<li>
+<p>不采用路径区分文章和页面，因为它们有些时候会互相转化。</p>
+</li>
+<li>
+<p>（缺点）目前上传部署过程还需手动，计划未来集成一些半自动的推送方案。</p>
+</li>
+</ul>
+<p>（所以这玩意应该会被我使用蛮长一段时间，除非我开始修不好它）</p>
+<section data-footnotes="" class="footnotes"><h2 class="sr-only" id="footnote-label">Footnotes</h2>
+<ol>
+<li id="user-content-fn-why-static">
+<p>无论是XING还是后面移植的Astro主题NothingHere，都算是为静态博客而生的，原因也很简单：免费托管+扛揍，对我这个一年不知道更几篇文章、有几个访客的小站来说再合适不过了。 <a href="#user-content-fnref-why-static" data-footnote-backref="" aria-label="Back to reference 1" class="data-footnote-backref">↩</a></p>
+</li>
+</ol>
+</section></div></article></main><button class="back-top-only" onclick="scrollToTop()" title="按 T 键也可快速返回顶部哦！">↑</button>
+<div id="lightbox" style="display:none;position:fixed;inset:0;background:var(--bg);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);z-index:9999;align-items:center;justify-content:center">
+  <img id="lightbox-img" style="max-width:95%;max-height:95%;border-radius:8px;object-fit:contain;display:block;margin:auto;box-shadow:0 8px 32px rgba(0,0,0,0.15)" />
+  <button id="lightbox-prev" style="position:absolute;left:20px;top:50%;transform:translateY(-50%);background:rgba(31,35,40,0.12);border:none;color:var(--text);font-size:2.5em;padding:0.1em 0.4em;border-radius:50%;cursor:pointer;display:none;backdrop-filter:blur(4px)">‹</button>
+  <button id="lightbox-next" style="position:absolute;right:20px;top:50%;transform:translateY(-50%);background:rgba(31,35,40,0.12);border:none;color:var(--text);font-size:2.5em;padding:0.1em 0.4em;border-radius:50%;cursor:pointer;display:none;backdrop-filter:blur(4px)">›</button>
+  <button id="lightbox-close" style="position:absolute;top:20px;right:25px;background:none;border:none;color:var(--text);font-size:2.5em;cursor:pointer;opacity:0.5">&times;</button>
+</div>
+<footer style="text-align:center;padding:1.5em 0;color:var(--text-muted);font-size:0.8em">&nbsp;</footer>
+<div id="shortcut-help" class="shortcut-help">
+  <div class="shortcut-help-inner">
+    <h3>食用本站的若干方法！</h3>
+    <table>
+      <tr><td><kbd>J</kbd></td><td>向下滚动一屏</td></tr>
+      <tr><td><kbd>K</kbd></td><td>向上滚动一屏</td></tr>
+      <tr><td><kbd>T</kbd></td><td>回到页面顶部</td></tr>
+      <tr><td><kbd>G</kbd></td><td>跳到页面底部</td></tr>
+      <tr><td><kbd>D</kbd></td><td>开关目录</td></tr>
+      <tr><td><kbd>←</kbd> <kbd>→</kbd></td><td>灯箱内切换图片</td></tr>
+      <tr><td><kbd>Esc</kbd></td><td>关闭目录 / 指南 / 灯箱</td></tr>
+      <tr><td><kbd>Shift</kbd> + <kbd>/</kbd>（即 ? 键）</td><td>打开 / 关闭本指南</td></tr>
+      <tr><td><kbd>Ctrl</kbd>+<kbd>P</kbd></td><td>打印当前页（已优化打印样式）</td></tr>
+    </table>
+    <div class="hint">按 Esc 或 Shift + /（即 ? 键）关闭本指南，或点击空白处</div>
+  </div>
+</div>
+</body></html><script>(function(){const imageLoadingTimeout = 500;
+const imageFailTimeout = 15000;
+
+  window.APP_CONFIG = {
+    imageLoadingTimeout: imageLoadingTimeout,
+    imageFailTimeout: imageFailTimeout
+  };
+})();</script><script type="module" src="/_astro/BaseLayout.astro_astro_type_script_index_0_lang.JW1I2-R4.js"></script><script type="module" src="/_astro/BlogPost.astro_astro_type_script_index_0_lang.B0_3X8kD.js"></script>
